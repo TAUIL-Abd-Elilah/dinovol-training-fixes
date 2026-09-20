@@ -70,5 +70,106 @@
     "The faster FP16 training path was rejected after substantial sampled gradient/update differences; its evidence is retained.",
     "Existing padding and PyTorch checkpointing techniques are prior art. Training fixes and validation are this contribution.",
     "No upstream adoption or prize outcome is claimed."
-  ]
+  ],
+  "trajectory96": {
+    "complete_updates_per_arm": 100,
+    "performance": {
+      "native_median_ms": 3070.227899996098,
+      "candidate_median_ms": 2657.930600005784,
+      "speedup": 1.1551196633912928,
+      "native_peak_allocated_bytes": 10773071872,
+      "candidate_peak_allocated_bytes": 9075921408,
+      "allocated_reduction_fraction": 0.15753635399119703
+    },
+    "extrema": {
+      "gradient": {
+        "worst_update": 37,
+        "count": 58240,
+        "finite": true,
+        "exact": false,
+        "max_abs": 8.0108642578125e-05,
+        "mean_abs": 9.640102778521247e-08,
+        "relative_l2": 0.012039335916093085,
+        "cosine": 0.999979834648568
+      },
+      "student_before": {
+        "worst_update": 99,
+        "count": 58240,
+        "finite": true,
+        "exact": false,
+        "max_abs": 5.288887768983841e-05,
+        "mean_abs": 4.873985497890729e-07,
+        "relative_l2": 2.902921025523889e-06,
+        "cosine": 0.9999999999957881
+      },
+      "student_after": {
+        "worst_update": 99,
+        "count": 58240,
+        "finite": true,
+        "exact": false,
+        "max_abs": 5.2945688366889954e-05,
+        "mean_abs": 4.895119193882357e-07,
+        "relative_l2": 2.907828613420037e-06,
+        "cosine": 0.9999999999957737
+      },
+      "student_delta": {
+        "worst_update": 0,
+        "count": 58240,
+        "finite": true,
+        "exact": false,
+        "max_abs": 4.867485222348478e-05,
+        "mean_abs": 4.0480335008816415e-08,
+        "relative_l2": 0.038747283940984596,
+        "cosine": 0.9992493170095254
+      },
+      "teacher_before": {
+        "worst_update": 99,
+        "count": 58240,
+        "finite": true,
+        "exact": false,
+        "max_abs": 2.288166433572769e-05,
+        "mean_abs": 1.448382636639454e-07,
+        "relative_l2": 1.1591976072605126e-06,
+        "cosine": 0.9999999999993299
+      },
+      "teacher_after": {
+        "worst_update": 99,
+        "count": 58240,
+        "finite": true,
+        "exact": false,
+        "max_abs": 2.306140959262848e-05,
+        "mean_abs": 1.46617497214913e-07,
+        "relative_l2": 1.1688170182578057e-06,
+        "cosine": 0.9999999999993188
+      },
+      "teacher_delta": {
+        "worst_update": 0,
+        "count": 58240,
+        "finite": true,
+        "exact": false,
+        "max_abs": 2.911672680738775e-07,
+        "mean_abs": 2.342513737320194e-10,
+        "relative_l2": 0.03910477853911848,
+        "cosine": 0.9992354512332521
+      },
+      "total_loss": {
+        "worst_update": 2,
+        "native": 17.659833908081055,
+        "candidate": 17.659879684448242,
+        "absolute_delta": 4.57763671875e-05,
+        "relative_delta": 2.592117651035945e-06
+      }
+    },
+    "full_audit_updates": [
+      0,
+      24,
+      49,
+      74,
+      99
+    ],
+    "initial_sampled_states_identical": true,
+    "all_100_batch_hashes_match": true,
+    "all_100_optimizer_and_finiteness_checks_pass": true,
+    "evidence": "research/training/trajectory96/comparison.json"
+  }
 }

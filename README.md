@@ -88,6 +88,22 @@ The earlier FP16-internal candidate reached 2.015× step speed in [its archived 
 
 To evaluate the experimental source path, apply the attention patch after the two fixes and add `"pad_sdpa_heads": true` to the existing model configuration. Default behavior stays disabled. This remains a short-run training experiment; convergence and downstream ink quality have not been established.
 
+## 100-update integrated-source trajectory
+
+A subsequent [paired trajectory experiment](research/training/trajectory96/README.md)
+completed **100 updates per arm with changing real CT crops and masks**, using
+the actual integrated source with padding off/on. All 100 input hashes matched;
+every optimizer-step and full-gradient finiteness check passed. Full audits ran
+at five checkpoints, with sampled parameter/EMA audits between them.
+
+Median step speed was **1.155x** native, with **15.75%** lower peak
+allocated memory. Worst sampled gradient/update relative L2 differences were
+**1.2039% / 3.8747%**; final sampled student/teacher parameter differences were
+**0.000291% / 0.000117%**. Maximum absolute total-loss difference was
+**4.57763672e-05**. These are drift measurements, not evidence of equivalent
+convergence or ink accuracy. This extends the same contribution and remains
+experimental and default-off.
+
 ## Scope and attribution
 
 The two training bug fixes are independent new September contributions. The experimental training attention path extends the earlier frozen-inference padding work; it is not presented as a separate discovery of head padding or a second claim for the same earlier result. This repository demonstrates restored configuration behavior and functioning checkpointed gradients on real CT. It does not establish improved ink accuracy, newly readable text, convergence, upstream adoption or an award outcome.

@@ -151,6 +151,11 @@
       "sha256": "aa67ed26f00a16bacdd2db625ed87b4394b764a3d29dbf01d66052115b0fee70"
     },
     {
+      "path": "research/training/TRAJECTORY_PLAN.md",
+      "bytes": 2116,
+      "sha256": "01c134b308f2562f8399aed1bbbd888d04bb0d9f9a92eb271492aad6467fe8a3"
+    },
+    {
       "path": "research/training/autograd_screen.json",
       "bytes": 3385,
       "sha256": "66e74ea0da815571edb2cd4aa1f15aa5ca1fe84465b5433b0f5c4349b915bd05"
@@ -164,6 +169,11 @@
       "path": "research/training/compare_training.py",
       "bytes": 4834,
       "sha256": "33aa51e522d2b56434f33bf3b10083ce4d3e3b4705aff9a3b3f6f9fb14a669aa"
+    },
+    {
+      "path": "research/training/compare_trajectory.py",
+      "bytes": 5541,
+      "sha256": "fc3b9a8706e35289657e0ef7c3bbaf085c9ab4fa907622081092820adc045240"
     },
     {
       "path": "research/training/comparison96.json",
@@ -976,6 +986,11 @@
       "sha256": "422e6112757a68898d96db9aed0c99b72e427e84dc0187848a26760364be35bc"
     },
     {
+      "path": "research/training/plot_trajectory.py",
+      "bytes": 2131,
+      "sha256": "4077f73471c74824ca837bd940af6b65a51b58cb93488e7a2373cd8d1a94d66b"
+    },
+    {
       "path": "research/training/probe_autograd.py",
       "bytes": 2498,
       "sha256": "d337566fb5c9344b62594ab5152e70a61ecf2e369cc08a8a3125bace4654e64c"
@@ -1021,9 +1036,114 @@
       "sha256": "4d8a903ea7821d9fb35c14e67f1cf1587d81df42eb83e4f61ec79a8539e44ecb"
     },
     {
+      "path": "research/training/run_trajectory_probe.py",
+      "bytes": 33348,
+      "sha256": "09ca0a33a63e399e9b73eb9fd07173b1e2010efee0958d59fc34513d9116e8ef"
+    },
+    {
       "path": "research/training/training_sdpa.py",
       "bytes": 1905,
       "sha256": "c10d07cc27e9af2741a3e84ba0b464a3c5f059874f219e94195923a90565ca66"
+    },
+    {
+      "path": "research/training/trajectory96/README.md",
+      "bytes": 4373,
+      "sha256": "634a8f17153e0a5ea33dd74a591c18c45eb61d91dc5483a82fb485b2b589ba29"
+    },
+    {
+      "path": "research/training/trajectory96/comparison.json",
+      "bytes": 605245,
+      "sha256": "62b0b16e28e8f660b01df21c4ac7e0f68dc1c449cc284ccd3584ed562689a894"
+    },
+    {
+      "path": "research/training/trajectory96/native/parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/trajectory96/native/report.json",
+      "bytes": 5193218,
+      "sha256": "fb0dec484590c1e28979b46fb217551eeca67bb362779a600c2495d629b85d33"
+    },
+    {
+      "path": "research/training/trajectory96/native/timed_37_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "971ef19263ca468d943f34c4b420578c07b83e62c332aa37ac82c3b9059e36c7"
+    },
+    {
+      "path": "research/training/trajectory96/native/timed_37_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "4d13a52effc43aed45eaeb4e6ffa5fa97c1fdeab805b3e9f76c19f2019c67e51"
+    },
+    {
+      "path": "research/training/trajectory96/native/timed_99_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "cf343cddaca51734952d39c8a422edb6a681118f2e8485ee82d3fc97902ce4ca"
+    },
+    {
+      "path": "research/training/trajectory96/native/timed_99_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "03eff10069477d73f279400e632634487c133c319f26aaddabb856fa0e5b2931"
+    },
+    {
+      "path": "research/training/trajectory96/native/warmup_00_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "d9d0f249eeb34564fe87460c58d0c7f86630967f39ee8f9f99a35c3304f6bf6d"
+    },
+    {
+      "path": "research/training/trajectory96/native/warmup_00_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "1496ec1ccedc0cad71271d8ba1fce7fb6b16a278284256885c63cc62c1154c7a"
+    },
+    {
+      "path": "research/training/trajectory96/padded/parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/trajectory96/padded/report.json",
+      "bytes": 5193114,
+      "sha256": "308472b57b1eb04d4c28df0cb516260ecbd1987051dbaba7a4bdabcbe7fc3ae5"
+    },
+    {
+      "path": "research/training/trajectory96/padded/timed_37_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "d187452f9035cd9ceb8cde4951a4332b2e307206de080fc7dc457af932db40d9"
+    },
+    {
+      "path": "research/training/trajectory96/padded/timed_37_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "a65cbf7cb8a8ec0c81854e272fb231917049e6dd1168f8a5a77eaf1f0e1c00cc"
+    },
+    {
+      "path": "research/training/trajectory96/padded/timed_99_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "49a86fe7c16d8487260ced1bcf66424c4384f7f3f59316a05474237ed7a8286b"
+    },
+    {
+      "path": "research/training/trajectory96/padded/timed_99_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "1c0ee2cac754365c5f79b80cad1fa60aa1b335f4ebdd8678499e96774351220e"
+    },
+    {
+      "path": "research/training/trajectory96/padded/warmup_00_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "b96eb5b7a12417b28f1301b0f8ba83ac577c4e2dc1b73fcb545c385d84f108a5"
+    },
+    {
+      "path": "research/training/trajectory96/padded/warmup_00_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "7d1dce46f0e1e4370e1f445f80a24246c63928a90cfd3677184179f6a5caa86b"
+    },
+    {
+      "path": "research/training/trajectory96/trajectory.png",
+      "bytes": 230957,
+      "sha256": "4fc6200933bfef28509b563fa92ee4cefb8f0de5a95010834b35ff75ff172107"
+    },
+    {
+      "path": "research/training/trajectory_audit.py",
+      "bytes": 3834,
+      "sha256": "31f62fd1c2b2912ce9cd10dd32d02072b5f0f1dea2036c9baa4220833eb021c5"
     },
     {
       "path": "research/training/verify_checkpoint.py",
