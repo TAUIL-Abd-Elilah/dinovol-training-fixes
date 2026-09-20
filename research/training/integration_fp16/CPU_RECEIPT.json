@@ -1,0 +1,208 @@
+{
+  "source_pin": "f07d33be6a00d12ace7d6a9465efe17c78ed7b47",
+  "scope": "CPU-only synthetic state/configuration and guarded-helper regression.",
+  "torch": "2.13.0+cu126",
+  "cases": [
+    {
+      "model_type": "v1",
+      "block_chunks": 0,
+      "setting": "omitted",
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v1",
+      "block_chunks": 0,
+      "setting": false,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v1",
+      "block_chunks": 0,
+      "setting": true,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 4,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v1",
+      "block_chunks": 2,
+      "setting": "omitted",
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v1",
+      "block_chunks": 2,
+      "setting": false,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v1",
+      "block_chunks": 2,
+      "setting": true,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 4,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v1",
+      "block_chunks": 4,
+      "setting": "omitted",
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v1",
+      "block_chunks": 4,
+      "setting": false,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v1",
+      "block_chunks": 4,
+      "setting": true,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 4,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v2",
+      "block_chunks": 0,
+      "setting": "omitted",
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v2",
+      "block_chunks": 0,
+      "setting": false,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v2",
+      "block_chunks": 0,
+      "setting": true,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 4,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v2",
+      "block_chunks": 2,
+      "setting": "omitted",
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v2",
+      "block_chunks": 2,
+      "setting": false,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v2",
+      "block_chunks": 2,
+      "setting": true,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 4,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v2",
+      "block_chunks": 4,
+      "setting": "omitted",
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v2",
+      "block_chunks": 4,
+      "setting": false,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v2",
+      "block_chunks": 4,
+      "setting": true,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 4,
+      "outputs_input_and_parameter_gradients_exact": true
+    }
+  ],
+  "helper_sha256": "f684672d655171454a59c4f9f321cfd1b0a3ab123aab9745015670716bee91dc",
+  "helper_checks": [
+    {
+      "case": "mocked_candidate_math",
+      "scale": null,
+      "max_abs": 0.0
+    },
+    {
+      "case": "mocked_candidate_math",
+      "scale": 0.19,
+      "max_abs": 0.0
+    },
+    {
+      "case": "disabled",
+      "native_tensor_identity_preserved": true
+    },
+    {
+      "case": "already_supported",
+      "native_tensor_identity_preserved": true
+    },
+    {
+      "case": "missing_api",
+      "native_tensor_identity_preserved": true
+    },
+    {
+      "case": "candidate_unsupported",
+      "native_tensor_identity_preserved": true
+    },
+    {
+      "case": "candidate_api_error",
+      "native_tensor_identity_preserved": true
+    },
+    {
+      "case": "no_enabled_backend",
+      "native_tensor_identity_preserved": true
+    }
+  ],
+  "cuda_initialized": false,
+  "status": "PASS"
+}

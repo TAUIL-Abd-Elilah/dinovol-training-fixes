@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "base_commit": "f07d33be6a00d12ace7d6a9465efe17c78ed7b47",
+  "base_subtree": "dinovol",
+  "base_subtree_object": "f59dcbed9e4f60ae84cced16c936671284160c14",
+  "archive_sha256": "1d505893d525984dfa3c89454e7c021f884e0f1ef9319ad1ca125f818bd7f74e",
+  "base_file_count": 94,
+  "base_files_manifest_sha256": "4c6f3c4455b8626f516653acce3c2d560b47b5dee1900618c22e3c6022cab0c9",
+  "assemble_script_sha256": "6dc01b4d3a0460eb335c87c95e46487852ee399f4fe921e582c37ae803551b62",
+  "patches": [
+    {
+      "order": 1,
+      "label": "config",
+      "path": "patches/01_config.patch",
+      "sha256": "bd649c3941ef562c3f287356b89d4a62427adb1632dd6f43a4c9538a1a22ca08",
+      "apply_check": "PASS",
+      "applied": true,
+      "warnings": ""
+    },
+    {
+      "order": 2,
+      "label": "checkpoint",
+      "path": "patches/02_checkpoint.patch",
+      "sha256": "a1cec7b3de15e34b70b3d4c69681193709fb72c475a48d874d55641d495cfa15",
+      "apply_check": "PASS",
+      "applied": true,
+      "warnings": ""
+    },
+    {
+      "order": 3,
+      "label": "attention",
+      "path": "patches/03_attention.patch",
+      "sha256": "f69bf4af3bc3577caa41f8bed2510218af3be89182421ad1206bea279c62ec00",
+      "apply_check": "PASS",
+      "applied": true,
+      "warnings": ""
+    }
+  ],
+  "git_worktree_created": false,
+  "model_imported": false,
+  "installs": false,
+  "cuda_called": false,
+  "final_file_count": 95,
+  "changed_files": [
+    "dinovol/dinovol_2/model/dinov2_eva.py",
+    "dinovol/dinovol_2/model/model.py",
+    "dinovol/dinovol_2/pretrain.py"
+  ],
+  "added_files": [
+    "dinovol/dinovol_2/model/training_sdpa_padding.py"
+  ],
+  "deleted_files": [],
+  "final_files_manifest_sha256": "49a6565815a38b21bea4272220c1d6bca6c479dcd876c3f233ffe4a5f9e780cc",
+  "source_python_ast": "PASS",
+  "python_file_count": 83,
+  "original_licenses_and_modified_source_headers_preserved": true,
+  "dinovol_root_relative": "dinovol",
+  "runtime_validation": "Pending: AST and patch applicability only; no model imports or GPU execution"
+}

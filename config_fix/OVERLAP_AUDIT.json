@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-20",
+  "scope": "Bounded primary-source overlap check; no uniqueness claim",
+  "official_repository": "https://github.com/ScrollPrize/villa",
+  "main_commit_observed": "23c3d759e44eb310c4e507beea71228a77904c88",
+  "main_commit_timestamp": "2026-09-20T06:11:53Z",
+  "current_raw_files_inspected": [
+    "dinovol/dinovol_2/pretrain.py",
+    "dinovol/dinovol_2/model/model.py",
+    "dinovol/dinovol_2/model/dinov2_eva.py"
+  ],
+  "current_source_observation": "Trainer still replaces complete model config with backbone-only materialization; supported pretrained loader remains; plain SDPA call with no head padding found in inspected training attention source",
+  "github_issue_pr_searches": [
+    {"query": "repo:ScrollPrize/villa dinovol pretrained", "total_count": 2, "hits": [806, 815], "assessment": "unrelated to trainer configuration loss"},
+    {"query": "repo:ScrollPrize/villa dinovol head padding", "total_count": 0},
+    {"query": "repo:ScrollPrize/villa materialize backbone", "total_count": 0},
+    {"query": "repo:ScrollPrize/villa SDPA", "total_count": 2, "hits": [775, 653], "assessment": "existing SDPA prior work; not evidence of a new primitive"},
+    {"query": "repo:ScrollPrize/villa \"pretrained_weights\"", "total_count": 0},
+    {"query": "repo:ScrollPrize/villa \"dino_out_dim\"", "error": "HTTP 403 rate limit; not a zero-result query"},
+    {"query": "repo:ScrollPrize/villa dinovol training", "error": "HTTP 403 rate limit; not a zero-result query"},
+    {"query": "repo:ScrollPrize/villa \"head\" \"padding\"", "error": "HTTP 403 rate limit; not a zero-result query"},
+    {"query": "repo:ScrollPrize/villa \"use_reentrant\"", "total_count": 0, "context": "later narrow checkpoint-compatibility follow-up"}
+  ],
+  "limitations": [
+    "Search terms can miss work described differently.",
+    "Search does not exclude unpublished or private work.",
+    "Queries that received HTTP 403 provide no overlap evidence.",
+    "No issue or pull request was opened and no maintainer was contacted."
+  ]
+}

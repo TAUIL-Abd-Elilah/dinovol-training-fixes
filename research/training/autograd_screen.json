@@ -1,0 +1,130 @@
+{
+  "torch": "2.13.0+cu126",
+  "cases": [
+    {
+      "shape": [
+        2,
+        3,
+        31,
+        54
+      ],
+      "dtype": "torch.float64",
+      "device": "cpu",
+      "math_only": true,
+      "comparisons": {
+        "output": {
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "relative_l2": 0.0,
+          "cosine": 0.9999999999999999,
+          "finite": true
+        },
+        "grad_q": {
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "relative_l2": 0.0,
+          "cosine": 0.9999999999999989,
+          "finite": true
+        },
+        "grad_k": {
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "relative_l2": 0.0,
+          "cosine": 0.9999999999999997,
+          "finite": true
+        },
+        "grad_v": {
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "relative_l2": 0.0,
+          "cosine": 1.0000000000000004,
+          "finite": true
+        }
+      }
+    },
+    {
+      "shape": [
+        2,
+        16,
+        4097,
+        54
+      ],
+      "dtype": "torch.float16",
+      "device": "cuda",
+      "math_only": false,
+      "comparisons": {
+        "output": {
+          "max_abs": 0.0001220703125,
+          "mean_abs": 4.002624772983648e-06,
+          "relative_l2": 0.00030578245940135517,
+          "cosine": 0.9999999532650234,
+          "finite": true
+        },
+        "grad_q": {
+          "max_abs": 6.079673767089844e-06,
+          "mean_abs": 8.798703511015007e-07,
+          "relative_l2": 0.004218226604920696,
+          "cosine": 0.9999911033119848,
+          "finite": true
+        },
+        "grad_k": {
+          "max_abs": 5.7220458984375e-06,
+          "mean_abs": 8.79794081643239e-07,
+          "relative_l2": 0.004180062957018904,
+          "cosine": 0.9999912635722723,
+          "finite": true
+        },
+        "grad_v": {
+          "max_abs": 1.9073486328125e-06,
+          "mean_abs": 4.2294525497425386e-08,
+          "relative_l2": 0.0003221184169877248,
+          "cosine": 0.9999999481358944,
+          "finite": true
+        }
+      }
+    },
+    {
+      "shape": [
+        2,
+        16,
+        4097,
+        54
+      ],
+      "dtype": "torch.bfloat16",
+      "device": "cuda",
+      "math_only": false,
+      "comparisons": {
+        "output": {
+          "max_abs": 0.0009765625,
+          "mean_abs": 3.2056366262193784e-05,
+          "relative_l2": 0.0024474347923691435,
+          "cosine": 0.9999970050294189,
+          "finite": true
+        },
+        "grad_q": {
+          "max_abs": 3.0517578125e-05,
+          "mean_abs": 4.979217168544779e-07,
+          "relative_l2": 0.003237300578351393,
+          "cosine": 0.9999947599389192,
+          "finite": true
+        },
+        "grad_k": {
+          "max_abs": 1.52587890625e-05,
+          "mean_abs": 4.787959143503354e-07,
+          "relative_l2": 0.003161460315293205,
+          "cosine": 0.9999950025849096,
+          "finite": true
+        },
+        "grad_v": {
+          "max_abs": 1.52587890625e-05,
+          "mean_abs": 3.3667288642916613e-07,
+          "relative_l2": 0.0025496994471198944,
+          "cosine": 0.999996749517707,
+          "finite": true
+        }
+      }
+    }
+  ],
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "seconds": 1.6080002784729004
+}

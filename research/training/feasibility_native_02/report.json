@@ -1,0 +1,188 @@
+{
+  "status": "FAILED",
+  "mode": "native",
+  "scope": "Bounded real-CT training-step benchmark using the unedited official trainer.\n\nPretrained backbone, freshly initialized full projection heads and AdamW state;\nnot a resumed checkpoint, convergence test, or complete historical recipe.\n",
+  "script_sha256": "7df97fc1e9cd8a539e54654f501d06daa7a56fba6b704d91125029a2defaeed8",
+  "source_pin": "f07d33be6a00d12ace7d6a9465efe17c78ed7b47",
+  "started_utc": "2026-09-20T12:58:59Z",
+  "steps": [],
+  "official_trainer_edited": false,
+  "source_checkout_head": "8d6e1e9065976f44442c88d1de645e8f711e7400",
+  "source_hashes": {
+    "dinovol_2/pretrain.py": "e48b4dc5fe5deaf61c1af48630a26a63595b3ddb2e3b15ad7a5f01dfbc7e44f6",
+    "dinovol_2/model/model.py": "d94936e6c97c9f6751b35b6fb48c8d0e8b13c42b1fe3b3bb30050c1d44f8bd3e",
+    "dinovol_2/model/dinov2_eva.py": "f17ef11ae27dbd97150afd900e5d98f45df34dde9c5ecefe196cbd481487cdb9",
+    "dinovol_2/loss/dino_clstoken_loss.py": "adff06dfba6d5829087b7582d37d8c857acc06ccf80a6e36dc6ad73270be7c22",
+    "dinovol_2/loss/ibot_patch_loss.py": "7672220274312d6290cbd2524b3be2783c871f6fd7809b13a543b5fd17c5b0d7",
+    "dinovol_2/loss/koleo_loss.py": "6529526486c6a74fbf9b38bcce53555d65cbfc54e9b96795d29e405df1844b65"
+  },
+  "helper_sha256": "c10d07cc27e9af2741a3e84ba0b464a3c5f059874f219e94195923a90565ca66",
+  "versions": {
+    "python": "3.14.6 | packaged by conda-forge | (main, Jul 24 2026, 16:16:13) [MSC v.1944 64 bit (AMD64)]",
+    "torch": "2.13.0+cu126",
+    "numpy": "2.4.6",
+    "cuda": "12.6"
+  },
+  "input": {
+    "volumes": [
+      {
+        "source_uri": "s3://vesuvius-challenge-open-data/PHerc0139/volumes/20250728140407-9.362um-1.2m-113keV-masked.zarr",
+        "bbox_zyx": [
+          3840,
+          4096,
+          3712,
+          3968,
+          1344,
+          1600
+        ],
+        "voxel_size_um": 9.362,
+        "array_sha256": "fb5d3659016e1bb760c608336e3ae1f356414464362021ec4e96ce392de94ad5",
+        "file_sha256": "aa7e22e50cee6c3a1571122cb5fab13b9b3a349c0ead22fb39736a9312b82cb3"
+      },
+      {
+        "source_uri": "s3://vesuvius-challenge-open-data/PHerc0139/volumes/20250728140407-9.362um-1.2m-113keV-masked.zarr",
+        "bbox_zyx": [
+          4352,
+          4608,
+          3072,
+          3328,
+          2560,
+          2816
+        ],
+        "voxel_size_um": 9.362,
+        "array_sha256": "819b93a9fa7d3ab30735caea4f8d558f6e83439e9957942b886f1118a0a369f4",
+        "file_sha256": "f25662219c3958253aa1088f3e138e9ce2a7d77c8534e378f694a65b95a01039"
+      }
+    ],
+    "construction": "Per-source global128 at diagonal starts0/128; local64 at32/160; robust normalization separately per view; no view augmentation; view-major collation",
+    "mask_construction": "Each of4 rows masks indices arange(128)*32+row*7:128/4096 tokens; no random mask selection",
+    "tensor_hashes": {
+      "collated_global_crops": "c8fdf9250d3e395f9ef3913cdddffdae9d2d1ff70bad298977ac0c26846d7530",
+      "collated_local_crops": "147160aebbab40ba336dbc2ecf590b0d19a902a5147094e6b5561a88ff4f5958",
+      "collated_masks": "ad2465ec280da2a167763003447f4058b5f561ef4d58d8c98c4a4f10076d57fb",
+      "mask_indices_list": "1c6d759832a47e3f885394d958a80661a522786b601dd6e43c3ac15f7293aa7a",
+      "masks_weight": "7baeccb02eb819a1b5b55ee923f4eeea03589b79796ff6c110a600f7bc09a27e",
+      "n_masked_patches": "01f629f0807a547c90252f658557d888852aec7555ccbdf041134e56a6755ede"
+    }
+  },
+  "config": {
+    "lr": 2.5e-05,
+    "min_lr": 1e-06,
+    "weight_decay": 0.04,
+    "weight_decay_end": 0.2,
+    "patch_embed_lr_mult": 0.2,
+    "freeze_last_layer_steps": 1250,
+    "momentum_teacher": 0.994,
+    "final_momentum_teacher": 1.0,
+    "warmup_steps": 35000,
+    "warmup_teacher_temp": 0.04,
+    "teacher_temp": 0.07,
+    "warmup_teacher_temp_steps": 25000,
+    "clip_grad": 5.0,
+    "max_iterations": 1000000,
+    "centering": "sinkhorn_knopp",
+    "model": {
+      "input_channels": 1,
+      "global_crops_size": [
+        128,
+        128,
+        128
+      ],
+      "local_crops_size": [
+        64,
+        64,
+        64
+      ],
+      "embed_dim": 864,
+      "patch_size": [
+        8,
+        8,
+        8
+      ],
+      "embedding_type": "default",
+      "deeper_embed_patch_chunk_size": null,
+      "deeper_embed_batch_chunk_size": 1,
+      "depth": 24,
+      "num_heads": 16,
+      "qkv_bias": true,
+      "qkv_fused": true,
+      "mlp_ratio": 2.6666666666666665,
+      "swiglu_mlp": true,
+      "scale_mlp": true,
+      "scale_attn_inner": false,
+      "proj_drop_rate": 0.0,
+      "attn_drop_rate": 0.0,
+      "drop_path_rate": 0.2,
+      "drop_path_uniform": false,
+      "init_values": null,
+      "use_abs_pos_emb": false,
+      "use_rot_pos_emb": true,
+      "num_reg_tokens": 4,
+      "grad_checkpointing": true,
+      "block_chunks": 0,
+      "rope_type": "mixed",
+      "rope_kwargs": {
+        "base": 100.0,
+        "normalize_coords": "separate",
+        "shift_coords": 0.05,
+        "jitter_coords": 1.05,
+        "rescale_coords": 2.0
+      },
+      "model_type": "v2"
+    },
+    "device": "cuda",
+    "use_amp": true,
+    "use_ddp": false,
+    "resume": false,
+    "auto_resume": false,
+    "batch_size": 2,
+    "num_local_crops": 2,
+    "ibot_masked_loss_chunk_size": 256,
+    "dino_loss_weight": 1.0,
+    "ibot_loss_weight": 1.0,
+    "koleo_loss_weight": 0.1,
+    "gram": {
+      "enabled": false
+    },
+    "point_supervision": {
+      "enabled": false
+    },
+    "val_every_n": 0,
+    "save_every_n": 0,
+    "task_eval_every": 0,
+    "output_dir": "_research_september_20260920\\dinovol_training\\feasibility_native_02\\trainer"
+  },
+  "protocol": {
+    "seed": 20260920,
+    "schedule_start": 35000,
+    "warmup_updates": 0,
+    "timed_updates": 1,
+    "initial_scaler": 128.0,
+    "autocast_dtype": "default CUDA float16; model/optimizer parameters float32",
+    "gpu_memory_fraction": 0.85,
+    "tf32_matmul": false,
+    "cudnn_benchmark": false,
+    "starting_state": "official pretrained teacher backbone copied into student; fresh seeded DINO/iBOT heads; teacher synchronized; fresh AdamW/scaler/loss state",
+    "recipe_deviations": "B2 versus3;2 locals versus8;fixed3.125% masks versus sampled10-50% at probability0.5;checkpointing enabled;loss chunk256;fixed9.362um CT versus original2.4um corpus;no stochastic crop augmentation;not historical resume",
+    "timing_scope": "synchronized original train_step including copies/loss/backward/AdamW/EMA; excludes initialization, view preparation, snapshots, audits, and optional profile"
+  },
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 3090",
+    "total_memory": 25769279488
+  },
+  "checkpoint": {
+    "sha256": "e041ca870dd2570f8a44d1dd26db1197b3f74121f62023bc774fbc9d40e51a59",
+    "strict_backbone_keys": 463,
+    "student_parameters": 313254496,
+    "dino_out_dim": 131072,
+    "ibot_out_dim": 131072
+  },
+  "checkpoint_compatibility_adapter": {
+    "symbol": "dinovol_2.model.dinov2_eva.checkpoint",
+    "use_reentrant": false,
+    "all_modes": true,
+    "reason": "Pinned EVA passes RoPE kwargs; current PyTorch default reentrant checkpoint rejects unexpected keyword arguments"
+  },
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Competition\\Vesuvius progress prizes\\_research_september_20260920\\dinovol_training\\run_training_probe.py\", line 296, in main\n    run_step(number,'warmup' if number<args.warmups else 'timed')\n    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Competition\\Vesuvius progress prizes\\_research_september_20260920\\dinovol_training\\run_training_probe.py\", line 264, in run_step\n    metrics = trainer.train_step(batch,schedule_step)\n  File \"D:\\Competition\\Vesuvius progress prizes\\villa\\_worktrees\\ink9um\\dinovol\\dinovol_2\\pretrain.py\", line 1600, in train_step\n    self.scaler.scale(loss).backward()\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\PC\\miniconda3\\envs\\vesuvius\\Lib\\site-packages\\torch\\_tensor.py\", line 623, in backward\n    torch.autograd.backward(\n    ~~~~~~~~~~~~~~~~~~~~~~~^\n        self, gradient, retain_graph, create_graph, inputs=inputs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"C:\\Users\\PC\\miniconda3\\envs\\vesuvius\\Lib\\site-packages\\torch\\autograd\\__init__.py\", line 395, in backward\n    _engine_run_backward(\n    ~~~~~~~~~~~~~~~~~~~~^\n        tensors,\n        ^^^^^^^^\n    ...<5 lines>...\n        accumulate_grad=True,\n        ^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"C:\\Users\\PC\\miniconda3\\envs\\vesuvius\\Lib\\site-packages\\torch\\autograd\\graph.py\", line 979, in _engine_run_backward\n    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        t_outputs, *args, **kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )  # Calls into the C++ engine to run the backward pass\n    ^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 4.01 GiB. GPU 0 has a total capacity of 24.00 GiB of which 4.11 GiB is free. 20.40 GiB allowed; Of the allocated memory 17.51 GiB is allocated by PyTorch, and 849.66 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n",
+  "finished_utc": "2026-09-20T12:59:18Z"
+}

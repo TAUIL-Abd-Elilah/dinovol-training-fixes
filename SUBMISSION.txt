@@ -1,0 +1,31 @@
+Discord display name
+Abd Elilah (iluss.)
+
+URL of open-source / publicly available contribution
+https://github.com/TAUIL-Abd-Elilah/dinovol-training-fixes
+
+What is your contribution?
+
+(1) Which scroll data did you work on?
+
+I used real PHerc0139 CT from the public 9.362-micrometre scan and the official ps8 Paris4 step352500 teacher. Bug reproductions use fixed region A; training uses two regions, A and B. Tests use the full 864-wide, 24-block backbone. The repository records input hashes, coordinates, normalization and commands. Work ran on my existing RTX 3090 and 32 GB RAM computer.
+
+(2) How does it substantially increase the probability of reading the scrolls?
+
+While preparing pretrained Dinovol training on scroll CT, I encountered two independent failures. The trainer discarded requested pretrained weights and head settings, silently replacing an intended warm start with random initialization. Enabling activation checkpointing also failed because PyTorch rejected the model's existing RoPE arguments. Two small patches restore these intended behaviors.
+
+I also developed an experimental, default-off training option that computes padded attention internally in FP32 while retaining FP16 model inputs and outputs. The integrated source completed a training workload that exhausted memory with native attention on the same GPU. This enables further scroll-representation experiments on existing hardware; it does not yet demonstrate improved ink accuracy or new readable text.
+
+(3) What does this enable that was not possible before?
+
+The actual trainer now loads all 463 backbone state entries exactly into student and teacher. On real CT, class, register and patch embeddings match a directly loaded reference bit for bit. Before the fix, only 24 initialization/default entries matched, and patch embeddings had relative L2 error 1.42646. Requested 32-output test heads had also silently become 131072-output heads. The separate checkpointing fix preserves the compared class/patch outputs and every produced parameter gradient.
+
+The experimental integrated source completed seven real training updates with batch two, two 128-cubed global views and eight 64-cubed local views per sample. It retains all 313,254,496 student parameters and full 131072-output heads. Median timed steps took 7.42 seconds; maximum timed-step allocated memory was 11.62 GiB. The source implementation performs attention; a runtime hook only logs and forwards calls. The matching native-attention attempt exhausted memory.
+
+(4) What evidence have you provided?
+
+Patches, reproducible tests, source/input hashes and reports are public. Key evidence is config_fix/real_01/report.json, checkpoint_fix/real_checkpoint_gradients.json, research/training/integrated128_fp32_01/report.json and research/training/comparison96_fp32.json. The checkpoint regression matched all 215,858,304 produced parameter-gradient values across 438 tensors. CPU tests covered 12 case/seed runs and 1,092 comparisons.
+
+At a size both training variants could complete, seven paired 96-cubed updates gave 1.202-times step speed and 15.79% lower peak allocated memory. Relative L2 differences were 0.1282%-0.4220% for sampled gradients and 2.9561% initially, then 0.3122%-0.5026%, for sampled optimizer updates. Maximum total-loss difference was 0.0000095367. These short runs do not establish equivalent convergence or ink quality. The faster earlier FP16 candidate was rejected for much larger numerical differences.
+
+The two bugs are independent new September work. Training attention extends my earlier frozen-inference contribution; I am not claiming that earlier result twice. Development used AI assistance. No new text, measured accuracy gain, upstream adoption or award outcome is claimed.

@@ -1,0 +1,13 @@
+diff --git a/dinovol/dinovol_2/pretrain.py b/dinovol/dinovol_2/pretrain.py
+--- a/dinovol/dinovol_2/pretrain.py
++++ b/dinovol/dinovol_2/pretrain.py
+@@ -123,7 +123,8 @@
+ class DinoIBOTPretrainer:
+     def __init__(self, config: Mapping[str, Any]) -> None:
+         self.config = dict(config)
+-        self.model_config = _materialize_backbone_config(self.config["model"])
++        self.model_config = dict(self.config["model"])
++        self.model_config.update(_materialize_backbone_config(self.model_config))
+         self.config["model"] = self.model_config
+         distributed_config = resolve_distributed_config(self.config)
+         self.is_distributed = bool(distributed_config["use_ddp"])

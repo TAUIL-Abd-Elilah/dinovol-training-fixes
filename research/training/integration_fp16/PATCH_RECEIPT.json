@@ -1,0 +1,16 @@
+{
+  "status": "AST_AND_PATCH_CHECK_PASS",
+  "source_pin": "f07d33be6a00d12ace7d6a9465efe17c78ed7b47",
+  "checkout_edited": false,
+  "patch_sha256": "3c5908ee70d9cc30c81588b062057e794c4bbc4605fc61647b755df5a4dfd80c",
+  "original_normalized_sha256": {
+    "dinovol/dinovol_2/model/dinov2_eva.py": "2a9fd080126e0d2e4f31c6f34b8cdd93a2481bc9e6fa6e68281356c599279de5",
+    "dinovol/dinovol_2/model/model.py": "000ea19ad6376e2ae75efd90aab3992a2474b9f7f84f2210726361915c5b0e6e"
+  },
+  "updated_normalized_sha256": {
+    "dinovol/dinovol_2/model/dinov2_eva.py": "a1be3080c47cd3e911602a13952d5e9a3a4017e4f266057de8327f5ea35de3c8",
+    "dinovol/dinovol_2/model/model.py": "f5c98641685b45a318e73cce393a536322c8b041fb11360584495bc2add40365",
+    "dinovol/dinovol_2/model/training_sdpa_padding.py": "f684672d655171454a59c4f9f321cfd1b0a3ab123aab9745015670716bee91dc"
+  },
+  "helper_sha256": "f684672d655171454a59c4f9f321cfd1b0a3ab123aab9745015670716bee91dc"
+}

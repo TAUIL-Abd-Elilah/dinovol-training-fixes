@@ -1,0 +1,2695 @@
+{
+  "scope": "Real pretrained backbone: checkpoint-off vs explicit non-reentrant checkpoint.\n\nUses two real 64-cubed PHerc0139 views, train-mode stochastic depth/RoPE, and a\nfixed differentiable embedding objective. This is gradient regression evidence,\nnot DINO training quality or an ink-accuracy experiment.\n",
+  "torch": "2.13.0+cu126",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "checkpoint_sha256": "e041ca870dd2570f8a44d1dd26db1197b3f74121f62023bc774fbc9d40e51a59",
+  "eva_sha256": "f17ef11ae27dbd97150afd900e5d98f45df34dde9c5ecefe196cbd481487cdb9",
+  "input_sha256": "2eaa16a725ef34cc5233f12254ea45f4e50fad9057f51086f9573b296659705f",
+  "source_volume": "PHerc0139 20250728140407-9.362um-1.2m-113keV-masked.zarr",
+  "source_cube_l0_zyx": [
+    3840,
+    4096,
+    3712,
+    3968,
+    1344,
+    1600
+  ],
+  "local_cube_starts_zyx": [
+    [
+      32,
+      32,
+      32
+    ],
+    [
+      160,
+      160,
+      160
+    ]
+  ],
+  "view_size": [
+    64,
+    64,
+    64
+  ],
+  "use_reentrant": false,
+  "results": [
+    {
+      "checkpoint_enabled": false,
+      "loss": 0.8029733896255493,
+      "gradient_tensors": 438,
+      "gradient_elements": 215858304,
+      "finite_gradients": true
+    },
+    {
+      "checkpoint_enabled": true,
+      "loss": 0.8029733896255493,
+      "gradient_tensors": 438,
+      "gradient_elements": 215858304,
+      "finite_gradients": true,
+      "gradients": {
+        "all_exact": true,
+        "relative_l2": 0.0,
+        "per_tensor": [
+          {
+            "name": "cls_token",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "reg_token",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "down_projection.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "down_projection.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.0.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.0.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.0.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.0.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.0.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.0.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.0.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.1.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.1.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.1.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.1.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.1.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.1.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.1.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.2.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.2.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.2.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.2.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.2.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.2.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.2.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.3.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.3.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.3.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.3.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.3.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.3.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.3.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.4.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.4.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.4.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.4.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.4.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.4.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.4.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.4.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.4.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.4.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.4.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.4.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.4.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.4.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.4.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.4.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.4.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.4.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.5.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.5.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.5.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.5.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.5.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.5.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.5.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.5.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.5.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.5.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.5.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.5.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.5.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.5.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.5.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.5.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.5.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.5.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.6.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.6.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.6.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.6.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.6.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.6.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.6.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.6.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.6.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.6.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.6.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.6.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.6.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.6.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.6.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.6.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.6.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.6.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.7.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.7.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.7.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.7.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.7.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.7.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.7.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.7.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.7.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.7.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.7.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.7.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.7.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.7.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.7.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.7.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.7.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.7.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.8.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.8.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.8.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.8.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.8.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.8.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.8.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.8.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.8.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.8.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.8.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.8.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.8.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.8.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.8.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.8.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.8.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.8.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.9.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.9.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.9.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.9.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.9.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.9.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.9.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.9.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.9.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.9.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.9.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.9.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.9.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.9.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.9.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.9.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.9.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.9.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.10.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.10.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.10.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.10.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.10.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.10.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.10.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.10.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.10.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.10.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.10.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.10.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.10.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.10.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.10.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.10.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.10.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.10.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.11.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.11.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.11.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.11.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.11.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.11.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.11.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.11.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.11.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.11.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.11.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.11.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.11.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.11.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.11.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.11.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.11.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.11.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.12.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.12.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.12.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.12.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.12.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.12.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.12.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.12.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.12.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.12.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.12.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.12.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.12.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.12.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.12.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.12.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.12.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.12.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.13.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.13.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.13.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.13.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.13.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.13.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.13.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.13.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.13.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.13.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.13.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.13.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.13.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.13.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.13.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.13.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.13.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.13.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.14.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.14.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.14.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.14.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.14.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.14.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.14.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.14.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.14.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.14.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.14.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.14.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.14.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.14.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.14.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.14.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.14.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.14.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.15.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.15.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.15.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.15.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.15.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.15.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.15.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.15.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.15.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.15.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.15.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.15.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.15.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.15.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.15.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.15.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.15.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.15.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.16.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.16.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.16.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.16.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.16.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.16.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.16.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.16.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.16.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.16.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.16.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.16.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.16.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.16.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.16.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.16.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.16.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.16.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.17.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.17.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.17.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.17.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.17.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.17.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.17.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.17.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.17.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.17.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.17.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.17.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.17.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.17.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.17.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.17.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.17.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.17.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.18.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.18.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.18.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.18.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.18.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.18.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.18.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.18.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.18.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.18.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.18.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.18.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.18.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.18.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.18.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.18.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.18.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.18.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.19.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.19.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.19.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.19.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.19.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.19.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.19.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.19.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.19.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.19.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.19.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.19.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.19.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.19.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.19.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.19.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.19.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.19.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.20.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.20.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.20.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.20.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.20.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.20.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.20.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.20.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.20.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.20.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.20.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.20.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.20.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.20.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.20.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.20.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.20.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.20.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.21.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.21.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.21.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.21.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.21.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.21.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.21.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.21.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.21.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.21.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.21.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.21.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.21.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.21.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.21.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.21.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.21.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.21.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.22.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.22.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.22.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.22.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.22.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.22.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.22.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.22.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.22.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.22.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.22.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.22.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.22.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.22.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.22.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.22.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.22.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.22.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.23.norm1.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.23.norm1.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.23.attn.q_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.23.attn.v_bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.23.attn.qkv.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.23.attn.proj.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.23.attn.proj.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.23.rope_embed.mix_frequencies",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.23.norm2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.23.norm2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.23.mlp.fc1_g.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.23.mlp.fc1_g.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.23.mlp.fc1_x.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.23.mlp.fc1_x.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.23.mlp.norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.23.mlp.norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.23.mlp.fc2.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "blocks.23.mlp.fc2.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "norm.weight",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "name": "norm.bias",
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "outputs": {
+        "x_norm_clstoken": {
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "x_norm_patchtokens": {
+          "exact": true,
+          "max_abs": 0.0
+        }
+      }
+    }
+  ]
+}

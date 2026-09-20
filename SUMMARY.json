@@ -1,0 +1,74 @@
+{
+  "release": "Dinovol training fixes and experimental FP32 attention, September2026",
+  "environment": "Windows / RTX3090 24GiB / Torch2.13.0+cu126 / Python3.14.6",
+  "source_commit": "f07d33be6a00d12ace7d6a9465efe17c78ed7b47",
+  "warm_start": {
+    "native_checkpoint_state_entries_equal": 24,
+    "fixed_checkpoint_state_entries_equal": 463,
+    "state_entries": 463,
+    "native_entries_note": "These24 matching initial/default entries do not show learned weights were loaded.",
+    "fixed_embeddings_exact": true,
+    "receipt": "config_fix/real_01/report.json"
+  },
+  "checkpoint_fix": {
+    "produced_parameter_gradient_tensors": 438,
+    "produced_parameter_gradient_values": 215858304,
+    "all_produced_parameter_gradients_exact": true,
+    "compared_outputs": [
+      "class tokens",
+      "patch tokens"
+    ],
+    "compared_outputs_exact": true,
+    "receipt": "checkpoint_fix/real_checkpoint_gradients.json"
+  },
+  "fp32_attention_paired96": {
+    "native_median_ms": 3038.3554000000004,
+    "candidate_median_ms": 2526.7886000001454,
+    "speedup": 1.2024573009391548,
+    "native_peak_allocated_bytes": 10777565184,
+    "candidate_peak_allocated_bytes": 9075921408,
+    "allocated_reduction_fraction": 0.1578875884254638,
+    "updates_per_arm": 7,
+    "timed_updates_per_arm": 5,
+    "gradient_sample_count": 58240,
+    "gradient_sampling": "128 evenly spaced indices per parameter at most; post-unscale/post-clipping",
+    "gradient_relative_l2_range": [
+      0.001282411578418292,
+      0.0042199263580876825
+    ],
+    "first_update_relative_l2": 0.029560949736832046,
+    "later_update_relative_l2_range": [
+      0.00312224588625162,
+      0.005025657057211908
+    ],
+    "maximum_total_loss_absolute_difference": 9.5367431640625e-06,
+    "receipt": "research/training/comparison96_fp32.json"
+  },
+  "fp32_attention_integrated128": {
+    "actual_patched_source": true,
+    "runtime_checkpoint_adapter": false,
+    "updates_completed": 7,
+    "every_update_check_passed": true,
+    "median_timed_step_ms": 7417.189200001303,
+    "peak_allocated_bytes": 12479086592,
+    "native_status": "out of memory at95% allocator fraction; no finite speedup claimed",
+    "student_parameter_count": 313254496,
+    "prototype_heads": 131072,
+    "batch_size": 2,
+    "global_view_count_per_sample": 2,
+    "global_size": 128,
+    "local_view_count_per_sample": 8,
+    "local_size": 64,
+    "masking": "fixed25% on half of global views",
+    "initialization": "official step352500 pretrained backbone, fresh seeded heads and AdamW; not a full-checkpoint resume",
+    "receipt": "research/training/integrated128_fp32_01/report.json"
+  },
+  "limitations": [
+    "Short deterministic real-CT training experiment, not convergence or ink-reading validation.",
+    "FP32 attention is experimental and default-off; unsupported/already-fused cases retain native SDPA.",
+    "Numerical parity was measured at96 cubed. Native128 cubed failed, so same-size128 training parity is untested.",
+    "The faster FP16 training path was rejected after substantial sampled gradient/update differences; its evidence is retained.",
+    "Existing padding and PyTorch checkpointing techniques are prior art. Training fixes and validation are this contribution.",
+    "No upstream adoption or prize outcome is claimed."
+  ]
+}

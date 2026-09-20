@@ -1,0 +1,1035 @@
+{
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1096,
+      "sha256": "13a6ff641e223e1136685fc3ead04edff2404d4271570f18d3127b45f71e537d"
+    },
+    {
+      "path": "LICENSES/Apache-2.0.txt",
+      "bytes": 11562,
+      "sha256": "4b63d54afaae8f96b7b3baeb94d902bb50e4f17e3d0fc6cb450bef56cb769616"
+    },
+    {
+      "path": "LICENSES/DINOv3-LICENSE.md",
+      "bytes": 7569,
+      "sha256": "70caeefb829f11a21cd8fe524e8c3e9efeaeb8ec6e9326810878b9104f4255fc"
+    },
+    {
+      "path": "UPSTREAM_THIRD_PARTY_NOTICES.md",
+      "bytes": 2371,
+      "sha256": "42f278206983eb96d7a473639481d944524ed9da46662239a511b5cbc1b9a29d"
+    },
+    {
+      "path": "checkpoint_fix/LICENSES/Apache-2.0.txt",
+      "bytes": 11562,
+      "sha256": "4b63d54afaae8f96b7b3baeb94d902bb50e4f17e3d0fc6cb450bef56cb769616"
+    },
+    {
+      "path": "checkpoint_fix/LICENSES/DINOv3-LICENSE.md",
+      "bytes": 7569,
+      "sha256": "70caeefb829f11a21cd8fe524e8c3e9efeaeb8ec6e9326810878b9104f4255fc"
+    },
+    {
+      "path": "checkpoint_fix/LICENSES/Dinovol-MIT.txt",
+      "bytes": 1096,
+      "sha256": "13a6ff641e223e1136685fc3ead04edff2404d4271570f18d3127b45f71e537d"
+    },
+    {
+      "path": "checkpoint_fix/README.md",
+      "bytes": 3946,
+      "sha256": "dbf932dc6a30cec80243d61f13299a405b8bb860cc50f8866a51946b449aab79"
+    },
+    {
+      "path": "checkpoint_fix/UPSTREAM_THIRD_PARTY_NOTICES.md",
+      "bytes": 2371,
+      "sha256": "42f278206983eb96d7a473639481d944524ed9da46662239a511b5cbc1b9a29d"
+    },
+    {
+      "path": "checkpoint_fix/cpu_01/explicit_nonreentrant.patch",
+      "bytes": 1713,
+      "sha256": "a1cec7b3de15e34b70b3d4c69681193709fb72c475a48d874d55641d495cfa15"
+    },
+    {
+      "path": "checkpoint_fix/cpu_01/report.json",
+      "bytes": 313006,
+      "sha256": "bbdb87ff4234d5916ecbf7c01af258e5decd1edc6b52607b07623ba554f6cfc7"
+    },
+    {
+      "path": "checkpoint_fix/explicit_nonreentrant.patch",
+      "bytes": 1713,
+      "sha256": "a1cec7b3de15e34b70b3d4c69681193709fb72c475a48d874d55641d495cfa15"
+    },
+    {
+      "path": "checkpoint_fix/real_checkpoint_gradients.json",
+      "bytes": 73793,
+      "sha256": "cf8a52641ff4269aa21a6a555aba917e956e4642aeb0e0cca38e0cab2c4670f9"
+    },
+    {
+      "path": "checkpoint_fix/verify_checkpoint.py",
+      "bytes": 5863,
+      "sha256": "d0ebc8c301d1007744d84c3e1e0460b0cfb2a00a938d3e877e1be184ee2e59e9"
+    },
+    {
+      "path": "checkpoint_fix/verify_cpu.py",
+      "bytes": 11154,
+      "sha256": "a4c91b52a0fe92c5966fb181318e2fc5f71afbc1a757c8a6edb1b78ca313bf7b"
+    },
+    {
+      "path": "config_fix/FINDINGS.md",
+      "bytes": 7679,
+      "sha256": "ca498774d8913e03161a6b26f50fb6547e465e9e232903108abee30a6178982b"
+    },
+    {
+      "path": "config_fix/OVERLAP_AUDIT.json",
+      "bytes": 2044,
+      "sha256": "fee768df7f15ec3b28b262c1acf476149600712219406cdf3e98fc3d3fbb0060"
+    },
+    {
+      "path": "config_fix/SOURCE_RECEIPT.json",
+      "bytes": 1435,
+      "sha256": "af52a9c204dc6333a2466b1b2e8fe17e2a520b9200ecb03bf6047e7378238513"
+    },
+    {
+      "path": "config_fix/cpu_regression_01/report.json",
+      "bytes": 4077,
+      "sha256": "e6e4a11cba27aa0319186b8c86d3baddac4a9386e0e40952667dd92f74b669e2"
+    },
+    {
+      "path": "config_fix/preserve_model_config.patch",
+      "bytes": 696,
+      "sha256": "bd649c3941ef562c3f287356b89d4a62427adb1632dd6f43a4c9538a1a22ca08"
+    },
+    {
+      "path": "config_fix/real_01/report.json",
+      "bytes": 49608,
+      "sha256": "a1080640bcfc3b1cf15d6ce9421cb8c20fc20d6a60f00127687206042f080978"
+    },
+    {
+      "path": "config_fix/run_cpu_regression.py",
+      "bytes": 11283,
+      "sha256": "2900a8c8054c1f047cf8fed565baa55a2375b4d9864dadfb51ded91a0a03f1da"
+    },
+    {
+      "path": "config_fix/run_real_checkpoint.py",
+      "bytes": 17687,
+      "sha256": "9588c03a98d295ec89a46f340b8a5be00fd1184aeb146c50e92dee5a537a340b"
+    },
+    {
+      "path": "config_fix/source_contract.py",
+      "bytes": 3887,
+      "sha256": "d912957d0f994d71dc097b8a3ac248d52f0e628fe946300d1a69af93c00c7890"
+    },
+    {
+      "path": "research/integrated_source/ASSEMBLY.md",
+      "bytes": 1782,
+      "sha256": "79b408a42c6a7c0491769acd596ea06631204a6712111bf084bcb2424cd904a1"
+    },
+    {
+      "path": "research/integrated_source/ASSEMBLY_MANIFEST.json",
+      "bytes": 2091,
+      "sha256": "eb29c30bef91eb199bf71893049a39f09e01fe7204add5a09429fe9fd8543044"
+    },
+    {
+      "path": "research/integrated_source/BASE_FILES.json",
+      "bytes": 15646,
+      "sha256": "4c6f3c4455b8626f516653acce3c2d560b47b5dee1900618c22e3c6022cab0c9"
+    },
+    {
+      "path": "research/integrated_source/FINAL_FILES.json",
+      "bytes": 15811,
+      "sha256": "49a6565815a38b21bea4272220c1d6bca6c479dcd876c3f233ffe4a5f9e780cc"
+    },
+    {
+      "path": "research/integrated_source/assemble.py",
+      "bytes": 7412,
+      "sha256": "6dc01b4d3a0460eb335c87c95e46487852ee399f4fe921e582c37ae803551b62"
+    },
+    {
+      "path": "research/training/EXPERIMENT_PLAN.md",
+      "bytes": 6041,
+      "sha256": "aa67ed26f00a16bacdd2db625ed87b4394b764a3d29dbf01d66052115b0fee70"
+    },
+    {
+      "path": "research/training/autograd_screen.json",
+      "bytes": 3385,
+      "sha256": "66e74ea0da815571edb2cd4aa1f15aa5ca1fe84465b5433b0f5c4349b915bd05"
+    },
+    {
+      "path": "research/training/compare_initial.py",
+      "bytes": 2209,
+      "sha256": "dbaa88b592ff252840fed4ef7823231525b44dde4611ee3155eef488053aee07"
+    },
+    {
+      "path": "research/training/compare_training.py",
+      "bytes": 4834,
+      "sha256": "33aa51e522d2b56434f33bf3b10083ce4d3e3b4705aff9a3b3f6f9fb14a669aa"
+    },
+    {
+      "path": "research/training/comparison96.json",
+      "bytes": 1096189,
+      "sha256": "98575ed2289006184d4fedab631f1866ec86121aa8b523b8cb996dc306f1cfca"
+    },
+    {
+      "path": "research/training/comparison96_fp32.json",
+      "bytes": 1102087,
+      "sha256": "924dc0a9930ee3168d74c375a46a6650bf4cb978a6053ef75b713e7443b52431"
+    },
+    {
+      "path": "research/training/comparison96_fp32_initial.json",
+      "bytes": 3319,
+      "sha256": "7fde09117fdbfcb7ea045a9ed09041bcf43f4246ee9ebd104adcd08078efbc6d"
+    },
+    {
+      "path": "research/training/comparison96_math_initial.json",
+      "bytes": 3029,
+      "sha256": "4029cf202ffbf26e67dc41051b7d8aca3a994011f2e96de763b04fd81a9cdf17"
+    },
+    {
+      "path": "research/training/diagnostic96_fp32_01/parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/diagnostic96_fp32_01/report.json",
+      "bytes": 54950,
+      "sha256": "5d93375c1dd1d1de91a2032f4d7ae26da034282cd986a3c1f5b045a7ec5ad894"
+    },
+    {
+      "path": "research/training/diagnostic96_fp32_01/timed_00_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "21d1d9ac03518bf4985258989024176a2efe9d9e9bce5b1cbf2c56a231dcfcbc"
+    },
+    {
+      "path": "research/training/diagnostic96_fp32_01/timed_00_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/diagnostic96_fp32_01/timed_00_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "b4a839e55af47130a813ef03ce3d51eb17aaf1ea7caa3055821d9ead940213b8"
+    },
+    {
+      "path": "research/training/diagnostic96_fp32_01/timed_00_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "60fc67e2294747512c7eca8254214bb5ce38361298227ce179755b6baa0a13f1"
+    },
+    {
+      "path": "research/training/diagnostic96_math_01/parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/diagnostic96_math_01/report.json",
+      "bytes": 54950,
+      "sha256": "85ef4e7a9f4bd0e350d22b15a18b58d6af924c71667069033cee006ef81fade9"
+    },
+    {
+      "path": "research/training/diagnostic96_math_01/timed_00_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "75773fbd1c3fd605620fb358496355c8082eac84b50cad9a8f8b32a7ee0569af"
+    },
+    {
+      "path": "research/training/diagnostic96_math_01/timed_00_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/diagnostic96_math_01/timed_00_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "44be95b83eaa18241cb13be9c24753df1f74aa6ebbf86da5bae8bfa05de10032"
+    },
+    {
+      "path": "research/training/diagnostic96_math_01/timed_00_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "422e6112757a68898d96db9aed0c99b72e427e84dc0187848a26760364be35bc"
+    },
+    {
+      "path": "research/training/feasibility_native_01/report.json",
+      "bytes": 11073,
+      "sha256": "f29de94c45c1826aa282600968bc6cb61c24cdc161fa6e3cf657f46b6eddc493"
+    },
+    {
+      "path": "research/training/feasibility_native_02/report.json",
+      "bytes": 9793,
+      "sha256": "d1636b2ed65dc7ac323938e30b39f1f3fc6f29b15a0c5c6d5d7414d4f560eb92"
+    },
+    {
+      "path": "research/training/feasibility_padded_01/report.json",
+      "bytes": 8352,
+      "sha256": "9f457073107d642ffb21ee3ec94a3f5748cbe9bcefc1b5a99743ffcfbc5b8d8c"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/driver_snapshot.py",
+      "bytes": 29216,
+      "sha256": "4d8a903ea7821d9fb35c14e67f1cf1587d81df42eb83e4f61ec79a8539e44ecb"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/profile_06_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "2c183c100627fae22cc6d5f9280f3067f34431aa5dc50feaacd5ff497760fd0d"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/profile_06_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/profile_06_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "3b4cebbb4ba666f8549d8f4105e60afaf9f4a38f4d69305cc103e53dad6637b0"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/profile_06_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "0d2a0c9039f5f7083e3216a4661fc919fd094796504f6c77872d8b8b2cf655ae"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/report.json",
+      "bytes": 345319,
+      "sha256": "56487c4b3fa3d877db8bc55cad881b58f5f8b73b09d09bb7358c93e9ab4a3cd9"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/timed_01_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "d42c57040ff02fa8cb85a527ef5096322e31369b9c6b1819a750b5c7ad3be219"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/timed_01_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/timed_01_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "8f93defab6ca2495ce31401250c6ef2b420158559bd07f153f9663a82772b7a1"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/timed_01_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "bc7a64452c2d92eb0744d46e913d0bcfd4d9449a958e417bb692352daa594a7e"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/timed_02_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "bf409ebb1a6b035bf802a79b304c6ea4d67a3141e5b5e1b4f39fecf7fdf5caa8"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/timed_02_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/timed_02_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "e5b7294d04e70b8a176ecd6adfcd8a6dfe270a6c185fda687e8738fe4bb41fe0"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/timed_02_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "7433daf728bcd8d8d4a450589acd771e18316ad1c4f4b0c5f8b0d275e275da02"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/timed_03_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "466ca79d884e53d53d74b036708a6c11241a83e614cf01fe0583afb83ed03e24"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/timed_03_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/timed_03_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "dd561467c973f30065bc9f06b03cad00655d924decf72d6385454d246ee07ecb"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/timed_03_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "a6d44feffa939ffc34249e050d3e59d39c611597d0bfaca752245c181807ae4b"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/timed_04_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "36219cf70bb4971f82aa6bbf29b4a371fa6d32daa68cb4600f6adf2eda0dbb1e"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/timed_04_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/timed_04_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "7066c14f4c81b373457e7530ccb6506b0eb003699abf922a901c12f8eebd17cc"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/timed_04_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "491223734e9de5442432d710dbb72a6d418ba571c90c50cd0464364e7b3581c6"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/timed_05_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "a6c47a259bfa28d9dd9b7345923ff7f4691a59e0c7b90cfbdaced75290cc5d9d"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/timed_05_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/timed_05_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "83c195ccc1a3f6caa2f630cdd80af9f30f91e63f9dc66da45de309fefb29bcbf"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/timed_05_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "f0d15af9d55813deb72537d76aa09b2f83fd6a59fbf1f4810e5d35d3e900d9a0"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/warmup_00_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "f3f4fce19603762cc1f00b13fa0527c73ff14eea8e14c73b02a5d70be0bbfb04"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/warmup_00_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/warmup_00_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "39113d5ed10232d1d99b04846051778b555b3381d805ef1ae1a6064b8cb14759"
+    },
+    {
+      "path": "research/training/integrated128_fp32_01/warmup_00_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "95c58f8d9cbeaf47cbec35a64b1187e8c56318b4f8d2ab0b605095324c01516b"
+    },
+    {
+      "path": "research/training/integration/CPU_RECEIPT.json",
+      "bytes": 6626,
+      "sha256": "42fbd66020cda2b8d93708e54325d948f3da27066aaa3fa8b15af296ed6bc8a7"
+    },
+    {
+      "path": "research/training/integration/LICENSE",
+      "bytes": 1096,
+      "sha256": "13a6ff641e223e1136685fc3ead04edff2404d4271570f18d3127b45f71e537d"
+    },
+    {
+      "path": "research/training/integration/LICENSES/Apache-2.0.txt",
+      "bytes": 11562,
+      "sha256": "4b63d54afaae8f96b7b3baeb94d902bb50e4f17e3d0fc6cb450bef56cb769616"
+    },
+    {
+      "path": "research/training/integration/LICENSES/DINOv3-LICENSE.md",
+      "bytes": 7569,
+      "sha256": "70caeefb829f11a21cd8fe524e8c3e9efeaeb8ec6e9326810878b9104f4255fc"
+    },
+    {
+      "path": "research/training/integration/PATCH_RECEIPT.json",
+      "bytes": 961,
+      "sha256": "e63932aa8439550b3af2b65a996979bd921cfd1bc430e75e81560387b9e52bcc"
+    },
+    {
+      "path": "research/training/integration/README.md",
+      "bytes": 7126,
+      "sha256": "9e6f32cfecaf3fe749565731d8dd5c63a6a6a8098e99682cf370aa7c999b73c4"
+    },
+    {
+      "path": "research/training/integration/UPSTREAM_THIRD_PARTY_NOTICES.md",
+      "bytes": 2371,
+      "sha256": "42f278206983eb96d7a473639481d944524ed9da46662239a511b5cbc1b9a29d"
+    },
+    {
+      "path": "research/training/integration/check_training_integration.py",
+      "bytes": 8633,
+      "sha256": "5c62160441464e59d3297fc4007e033e1f6c34c5ad04d99a95bb071ab731cac0"
+    },
+    {
+      "path": "research/training/integration/dinovol_training_head_padding.patch",
+      "bytes": 8185,
+      "sha256": "f69bf4af3bc3577caa41f8bed2510218af3be89182421ad1206bea279c62ec00"
+    },
+    {
+      "path": "research/training/integration/make_training_integration.py",
+      "bytes": 5478,
+      "sha256": "6a3912df4cfb7119d673efa8684af6c03592f495ea94f6cec4e263fa00319204"
+    },
+    {
+      "path": "research/training/integration/training_sdpa_padding.py",
+      "bytes": 4149,
+      "sha256": "6b1f635f58402f8c3817993e03e3b5244bce90eee54a61eee40e16887c3811e8"
+    },
+    {
+      "path": "research/training/integration_fp16/CPU_RECEIPT.json",
+      "bytes": 6044,
+      "sha256": "63644758878a9dc1826ee380ebc0931e1b4b9abba2ece61dbf92cd51ead37da1"
+    },
+    {
+      "path": "research/training/integration_fp16/LICENSE",
+      "bytes": 1096,
+      "sha256": "13a6ff641e223e1136685fc3ead04edff2404d4271570f18d3127b45f71e537d"
+    },
+    {
+      "path": "research/training/integration_fp16/LICENSES/Apache-2.0.txt",
+      "bytes": 11562,
+      "sha256": "4b63d54afaae8f96b7b3baeb94d902bb50e4f17e3d0fc6cb450bef56cb769616"
+    },
+    {
+      "path": "research/training/integration_fp16/LICENSES/DINOv3-LICENSE.md",
+      "bytes": 7569,
+      "sha256": "70caeefb829f11a21cd8fe524e8c3e9efeaeb8ec6e9326810878b9104f4255fc"
+    },
+    {
+      "path": "research/training/integration_fp16/PATCH_RECEIPT.json",
+      "bytes": 961,
+      "sha256": "24c3747ec76a0df5f4121979b69c7e47b60b972fa2dda080e96c58e2893d2992"
+    },
+    {
+      "path": "research/training/integration_fp16/README.md",
+      "bytes": 5622,
+      "sha256": "c8e4ac29d23e12d3875c80d180a07e3b79f10281f9259b9a7fc7fadb0b927c76"
+    },
+    {
+      "path": "research/training/integration_fp16/UPSTREAM_THIRD_PARTY_NOTICES.md",
+      "bytes": 2371,
+      "sha256": "42f278206983eb96d7a473639481d944524ed9da46662239a511b5cbc1b9a29d"
+    },
+    {
+      "path": "research/training/integration_fp16/check_training_integration.py",
+      "bytes": 7598,
+      "sha256": "a9826a73fd3b99c97031039a87fb855a82f65858de3cd89c0a6b4ce9ecb8904d"
+    },
+    {
+      "path": "research/training/integration_fp16/dinovol_training_head_padding.patch",
+      "bytes": 7895,
+      "sha256": "3c5908ee70d9cc30c81588b062057e794c4bbc4605fc61647b755df5a4dfd80c"
+    },
+    {
+      "path": "research/training/integration_fp16/make_training_integration.py",
+      "bytes": 5478,
+      "sha256": "6a3912df4cfb7119d673efa8684af6c03592f495ea94f6cec4e263fa00319204"
+    },
+    {
+      "path": "research/training/integration_fp16/training_sdpa_padding.py",
+      "bytes": 3862,
+      "sha256": "f684672d655171454a59c4f9f321cfd1b0a3ab123aab9745015670716bee91dc"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/profile_06_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "917e1366cbf0b22f747b097812495f9e587dc2224e6f613403024f9d2f4c00dc"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/profile_06_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/profile_06_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "89d8a73f8cfa5554ccdcbe46f3e2b1b7deba3b39067fbdf93ed8ea093c689b47"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/profile_06_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "327d71c24b02495a1164b91d1a4556694f3396c84b39ac95ac77b13a0724f871"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/report.json",
+      "bytes": 332052,
+      "sha256": "68bf98f2d319e1d48f912ee01be4ae7c7fc5b82656c9ffb295186e25fb299a81"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/timed_01_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "7f26eb9c3627c3f857156852bbeef4cb9828b1a46692428175a47ef094dff978"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/timed_01_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/timed_01_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "b2036f513898cae5b86acfb0d9e73a6ee9ecdb334971832ffd50e3ac2cf5afaa"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/timed_01_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "37a05963acd0c82864555a2a461bd81aaf905d2bef260efeedac7190b88c7865"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/timed_02_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "65587c8296f29cc66a6fb8bd6a5addda14f14d9334d51389a828a91be0ccd3fe"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/timed_02_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/timed_02_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "206991e9c48973c49ebda0c7858d9effd42eff02c7f5e6d7c1bdfea03e68036c"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/timed_02_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "0da03e722ac47c0c45eed8f0e103a37f8ac643f3ab79b7c1d4b1dc15004e9568"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/timed_03_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "f0e3d44d921ed5e3f2be834e2c2d7db512f98c8f9337194a6beacf01b28ff866"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/timed_03_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/timed_03_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "d21668b8b33e75466ea7b9f20118bf9a14d0c91e4d967a438cc51651c698724c"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/timed_03_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "393ed5c28f4ba18c99b7f0abe3444d3743a0a655c40edaa0e7d685f60b3fb5b4"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/timed_04_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "810f20f6c81c6639740a888ce20431f633dde133b873dcab532c03a2893450ab"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/timed_04_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/timed_04_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "9b2a4b69695881c739270e7e10d4fc3df8c9b7e1cf6c8894ed7be5eaa0084096"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/timed_04_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "0a7d130b6a2dc5dd1022b4d8f57643e9fabfaeb102a7bb5f514cd82cbe0669d5"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/timed_05_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "c22ce028cb58fda5bea573e7a6fc04577bf2970de54da61b83927806ecbaba86"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/timed_05_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/timed_05_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "069bdd92262bcdd3798099af4db604845fa25b017f64ef89887852e0df1fe70f"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/timed_05_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "06eb4726f96727c728d36ed4b6c068351b51e0d6881d154dc6a29988685f1e2d"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/warmup_00_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "4e72394c030d8f164d05037cc235218009c838340273041c0cc6a5e2d3516c18"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/warmup_00_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/warmup_00_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "0f38977e8a7ff3d74e61269126e6779c8651806c9dd101be595c59eccfec262e"
+    },
+    {
+      "path": "research/training/paired96_fp32_guarded_01/warmup_00_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "b848f5f38c780c0f1d1dc1b9ecde3614c4ff70d327b46eadac01d576f5a1390e"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/profile_06_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "5fbe4a4dedacee2d468cdf11c78b110191e1d9dcc90e682262d4b5cd853dfc48"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/profile_06_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/profile_06_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "62c9b69e22a744bf01c6b6b4910f7f47f1f2ecf53c5e8d4cda3b3cccb20e95af"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/profile_06_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "6fe4896c12471f25ddd171df80d764348d31697a9c349b40a47520c58cc5307f"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/report.json",
+      "bytes": 331733,
+      "sha256": "bb634fc5dd02bdded7013054149e6870937161e9a131dbec17ad88221d86e00b"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/timed_01_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "d0539c8d371104d26263ee9b53a7d0c6b87b166953f6e78cf76521ad6e3fb1e9"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/timed_01_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/timed_01_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "8abb20173fa990b26072dcb91afdc4515010382825a12cc3ad7d7dec352f20ca"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/timed_01_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "b513b39791cb90797e2808a5cc15f7bcdb32935a712e9ccdd92d9e0bf7619ebf"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/timed_02_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "0a74a7fdc21442266c5972a7a161fcb3ffe17c708aa1fe54f0ff27f9cd314b25"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/timed_02_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/timed_02_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "fc3062dcac53dadfc7f44faeeeb6ba8312893e7f37df4b798de98488d8457fce"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/timed_02_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "7fbabfb49ba19345fd7efee532bcc75f59c0b6f906a09ab63ec9639826536962"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/timed_03_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "579eed7dd02889b26d855f7e3a406062b7a49dfbaa493d63ce391f31b6a3b2ce"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/timed_03_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/timed_03_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "25972ba8cdd321350f7daa6c6903de7ceab97893229c262ba145f5cf64e32fa7"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/timed_03_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "82e4c02185069dae70499409f7a3d9717ced42a521222445675cd63e8d075851"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/timed_04_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "8723ded8ff6ed5bacf0e7854880308becdba6f48645cd065b08aaa67f643bd82"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/timed_04_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/timed_04_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "14f954b2f09de61bd7503a319d4e131f54f4efdf0a55418a590361a6b7d0ace9"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/timed_04_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "7d7213bf770770b4ad0a56c11232fed8baaf8e975cfb1bfdf1e862e124ca40ae"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/timed_05_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "0c9d590b0764c438632fe7a3bad35ff3373022e7fb0863d168bf7fe8aeb2813b"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/timed_05_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/timed_05_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "db6f2835c5ec2a54d01b181978ddccb4fc71369b0be4cb223a9f0f5030455ea9"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/timed_05_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "48b97407ef4cd20079b9cd62e0a31acf7e8df307b5aaf55d1c31f6a2cca44ac3"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/warmup_00_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "61293299cbbd9f2633d9b05c27b39a9d9098f950144151f057b568b68f977540"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/warmup_00_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/warmup_00_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "a078bbedea2342a165251c7a68ed595f5f74425d8b23b39919022cc48ffa974f"
+    },
+    {
+      "path": "research/training/paired96_guarded_01/warmup_00_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "2979f3439aa69dc0e96666fb83ae3c2a2dfbc67c3747d0f9436c136116927030"
+    },
+    {
+      "path": "research/training/paired96_native_01/parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_native_01/profile_06_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "0a02807379de4d82fa45533891d791f6f77a41ddc234a705727d604bc97f17f1"
+    },
+    {
+      "path": "research/training/paired96_native_01/profile_06_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_native_01/profile_06_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "4b7e9f636955be84167695f6bd2983738d1438c1791ffb7a7a462e754f70f961"
+    },
+    {
+      "path": "research/training/paired96_native_01/profile_06_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "43af54c52909a4640d4fdcee22959fcf03f9d6b9afc5df7373c7887ce386ec30"
+    },
+    {
+      "path": "research/training/paired96_native_01/report.json",
+      "bytes": 331627,
+      "sha256": "5b6ec874155d604a355a47922a6cdb69d04ebd426204e34322ed27d4e4729827"
+    },
+    {
+      "path": "research/training/paired96_native_01/timed_01_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "d642862181793fc40e64290577ae477a692a79b4227fed68d841522f53f4d0ba"
+    },
+    {
+      "path": "research/training/paired96_native_01/timed_01_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_native_01/timed_01_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "6881465399c0773f66d9e46a4a911efd5ec5eab56aa488c8535cc6f61df30e8e"
+    },
+    {
+      "path": "research/training/paired96_native_01/timed_01_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "26380b366f819a3c6380452b29cd4d8339c8dd48cdd1191e577d9b50d2094043"
+    },
+    {
+      "path": "research/training/paired96_native_01/timed_02_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "511ac800d2f3b6037bf45214abca082d52f776f0d59cd439698544dae09afae2"
+    },
+    {
+      "path": "research/training/paired96_native_01/timed_02_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_native_01/timed_02_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "a2c3d7f19e823ab6287a85b1da84706501e636e6b98c3040f76b01a8522689f3"
+    },
+    {
+      "path": "research/training/paired96_native_01/timed_02_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "914fa6f0997187299b300cad51445c6d7b098b3eb9599fc6a9cd192d16c229be"
+    },
+    {
+      "path": "research/training/paired96_native_01/timed_03_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "e630a2585d709718603c99383e07f21f5641137b4a4f45b7717fbccc57e6363a"
+    },
+    {
+      "path": "research/training/paired96_native_01/timed_03_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_native_01/timed_03_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "94a4be1adae9cc5530212b16cce3f2e1142aeea92d85164b1c6d81e98726bbc9"
+    },
+    {
+      "path": "research/training/paired96_native_01/timed_03_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "e638c0d8210b2522f60d094ea5025d002e99d79dbbe97afefe2a1e7c2820e5af"
+    },
+    {
+      "path": "research/training/paired96_native_01/timed_04_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "b80df3bd9dc0ecfb844257093cea06597c92b2e39bae361aaa507d7f9bc5c964"
+    },
+    {
+      "path": "research/training/paired96_native_01/timed_04_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_native_01/timed_04_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "1a51a716c4dede080d5740c278e2e2468a7dcf9c180e1ad3db6b9e40df39fcb5"
+    },
+    {
+      "path": "research/training/paired96_native_01/timed_04_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "dfc875476ff10c3a47f58f195f17eda332df0bf8a4df7896e233532800770708"
+    },
+    {
+      "path": "research/training/paired96_native_01/timed_05_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "702e99cacf75b679427f626d929561876e076749f81782e0c4080ed278f5aa6c"
+    },
+    {
+      "path": "research/training/paired96_native_01/timed_05_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_native_01/timed_05_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "bdb38b86fd1f335730daced665d8487932aff1991dd79b39e803d5f7d3a239ca"
+    },
+    {
+      "path": "research/training/paired96_native_01/timed_05_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "c7dd00a6716ba024f7f2d187176c2c27cadab87cf3b31436812f7f3313e70384"
+    },
+    {
+      "path": "research/training/paired96_native_01/warmup_00_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "75773fbd1c3fd605620fb358496355c8082eac84b50cad9a8f8b32a7ee0569af"
+    },
+    {
+      "path": "research/training/paired96_native_01/warmup_00_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/paired96_native_01/warmup_00_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "44be95b83eaa18241cb13be9c24753df1f74aa6ebbf86da5bae8bfa05de10032"
+    },
+    {
+      "path": "research/training/paired96_native_01/warmup_00_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "422e6112757a68898d96db9aed0c99b72e427e84dc0187848a26760364be35bc"
+    },
+    {
+      "path": "research/training/probe_autograd.py",
+      "bytes": 2498,
+      "sha256": "d337566fb5c9344b62594ab5152e70a61ecf2e369cc08a8a3125bace4654e64c"
+    },
+    {
+      "path": "research/training/representative128_native_01/report.json",
+      "bytes": 10748,
+      "sha256": "56e6f33826380204eabcb058bef4697550bb38b6452c906c1131a7d6a8c79976"
+    },
+    {
+      "path": "research/training/representative128_padded_01/parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/representative128_padded_01/report.json",
+      "bytes": 54598,
+      "sha256": "592057885a7871782383bef0c6ab6067561c3cf377813a2d6bf40e71bbaa309b"
+    },
+    {
+      "path": "research/training/representative128_padded_01/timed_00_gradient_samples.npy",
+      "bytes": 233088,
+      "sha256": "a9e00b68639ab0881aedef53a838e7bec78a94e7ffd276e765b4957913ff6407"
+    },
+    {
+      "path": "research/training/representative128_padded_01/timed_00_parameter_sample_layout.json",
+      "bytes": 837308,
+      "sha256": "54e73c001f9b26c85de4c02ba94dd3ecb204dc1c10b2440b5aedbaa22c1201cc"
+    },
+    {
+      "path": "research/training/representative128_padded_01/timed_00_student_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "abcd364020a4e8e8ffed014221eee65ab30fed312d8caee01aa5b298bcb2b0f9"
+    },
+    {
+      "path": "research/training/representative128_padded_01/timed_00_teacher_delta_samples.npy",
+      "bytes": 233088,
+      "sha256": "d0d7cb61078c7a830734972b1526b63cfd41b6d0394a6675c1d108567096245d"
+    },
+    {
+      "path": "research/training/run_training_probe.py",
+      "bytes": 29216,
+      "sha256": "4d8a903ea7821d9fb35c14e67f1cf1587d81df42eb83e4f61ec79a8539e44ecb"
+    },
+    {
+      "path": "research/training/training_sdpa.py",
+      "bytes": 1905,
+      "sha256": "c10d07cc27e9af2741a3e84ba0b464a3c5f059874f219e94195923a90565ca66"
+    },
+    {
+      "path": "research/training/verify_checkpoint.py",
+      "bytes": 5863,
+      "sha256": "d0ebc8c301d1007744d84c3e1e0460b0cfb2a00a938d3e877e1be184ee2e59e9"
+    }
+  ],
+  "omitted": "Checkpoints, CT, raw embedding arrays, before/after model samples, traces and source archives. Small gradient/update samples are included; reports hash larger local evidence."
+}

@@ -1,0 +1,111 @@
+{
+  "reference": "_research_september_20260920\\dinovol_training\\paired96_native_01",
+  "candidate": "_research_september_20260920\\dinovol_training\\diagnostic96_math_01",
+  "scope": "First-update numerical screen, not convergence or a repeated speed benchmark.",
+  "source_hashes_equal": true,
+  "sample_comparisons": {
+    "gradient": {
+      "count": 58240,
+      "finite": true,
+      "exact": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "relative_l2": 0.0,
+      "cosine": 1.0000000000000002
+    },
+    "student_before": {
+      "count": 58240,
+      "finite": true,
+      "exact": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "relative_l2": 0.0,
+      "cosine": 0.9999999999999998
+    },
+    "student_after": {
+      "count": 58240,
+      "finite": true,
+      "exact": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "relative_l2": 0.0,
+      "cosine": 1.0
+    },
+    "student_delta": {
+      "count": 58240,
+      "finite": true,
+      "exact": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "relative_l2": 0.0,
+      "cosine": 1.0000000000000002
+    },
+    "teacher_before": {
+      "count": 58240,
+      "finite": true,
+      "exact": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "relative_l2": 0.0,
+      "cosine": 0.9999999999999998
+    },
+    "teacher_after": {
+      "count": 58240,
+      "finite": true,
+      "exact": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "relative_l2": 0.0,
+      "cosine": 1.0000000000000002
+    },
+    "teacher_delta": {
+      "count": 58240,
+      "finite": true,
+      "exact": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "relative_l2": 0.0,
+      "cosine": 1.0
+    }
+  },
+  "losses": [
+    {
+      "loss": 17.67597770690918,
+      "dino_global_loss": 1.3219561576843262,
+      "dino_local_loss": 10.545193672180176,
+      "ibot_loss": 5.8896331787109375,
+      "koleo_loss": -0.8080449104309082,
+      "gram_loss": 0.0,
+      "gram_loss_weight": 2.0,
+      "point_loss": 0.0,
+      "point_same_type_loss": 0.0,
+      "point_different_type_loss": 0.0,
+      "point_loss_weight": 0.05,
+      "point_count": 0.0,
+      "point_same_pair_count": 0.0,
+      "point_different_pair_count": 0.0,
+      "lr": 2.5e-05,
+      "weight_decay": 0.04048312356358563,
+      "teacher_temp": 0.07
+    },
+    {
+      "loss": 17.67597770690918,
+      "dino_global_loss": 1.3219561576843262,
+      "dino_local_loss": 10.545193672180176,
+      "ibot_loss": 5.8896331787109375,
+      "koleo_loss": -0.8080449104309082,
+      "gram_loss": 0.0,
+      "gram_loss_weight": 2.0,
+      "point_loss": 0.0,
+      "point_same_type_loss": 0.0,
+      "point_different_type_loss": 0.0,
+      "point_loss_weight": 0.05,
+      "point_count": 0.0,
+      "point_same_pair_count": 0.0,
+      "point_different_pair_count": 0.0,
+      "lr": 2.5e-05,
+      "weight_decay": 0.04048312356358563,
+      "teacher_temp": 0.07
+    }
+  ]
+}

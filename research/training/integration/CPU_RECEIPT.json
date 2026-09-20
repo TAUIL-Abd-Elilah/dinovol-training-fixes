@@ -1,0 +1,230 @@
+{
+  "source_pin": "f07d33be6a00d12ace7d6a9465efe17c78ed7b47",
+  "scope": "CPU-only synthetic state/configuration and guarded-helper regression.",
+  "torch": "2.13.0+cu126",
+  "cases": [
+    {
+      "model_type": "v1",
+      "block_chunks": 0,
+      "setting": "omitted",
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v1",
+      "block_chunks": 0,
+      "setting": false,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v1",
+      "block_chunks": 0,
+      "setting": true,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 4,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v1",
+      "block_chunks": 2,
+      "setting": "omitted",
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v1",
+      "block_chunks": 2,
+      "setting": false,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v1",
+      "block_chunks": 2,
+      "setting": true,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 4,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v1",
+      "block_chunks": 4,
+      "setting": "omitted",
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v1",
+      "block_chunks": 4,
+      "setting": false,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v1",
+      "block_chunks": 4,
+      "setting": true,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 4,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v2",
+      "block_chunks": 0,
+      "setting": "omitted",
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v2",
+      "block_chunks": 0,
+      "setting": false,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v2",
+      "block_chunks": 0,
+      "setting": true,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 4,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v2",
+      "block_chunks": 2,
+      "setting": "omitted",
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v2",
+      "block_chunks": 2,
+      "setting": false,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v2",
+      "block_chunks": 2,
+      "setting": true,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 4,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v2",
+      "block_chunks": 4,
+      "setting": "omitted",
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v2",
+      "block_chunks": 4,
+      "setting": false,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 0,
+      "outputs_input_and_parameter_gradients_exact": true
+    },
+    {
+      "model_type": "v2",
+      "block_chunks": 4,
+      "setting": true,
+      "state_keys_unchanged": true,
+      "double_materialization_preserves_option": true,
+      "helper_calls": 4,
+      "outputs_input_and_parameter_gradients_exact": true
+    }
+  ],
+  "helper_sha256": "6b1f635f58402f8c3817993e03e3b5244bce90eee54a61eee40e16887c3811e8",
+  "helper_checks": [
+    {
+      "case": "mocked_fp32_candidate_math",
+      "scale": null,
+      "rtol": 0.001,
+      "atol": 0.0001,
+      "max_abs": 0.0,
+      "output_and_gradient_dtype": "torch.float16",
+      "native_calls": [
+        {
+          "dtype": "torch.float32",
+          "width": 56,
+          "autocast_enabled": false,
+          "grad_enabled": true
+        }
+      ]
+    },
+    {
+      "case": "mocked_fp32_candidate_math",
+      "scale": 0.19,
+      "rtol": 0.001,
+      "atol": 0.0001,
+      "max_abs": 0.0,
+      "output_and_gradient_dtype": "torch.float16",
+      "native_calls": [
+        {
+          "dtype": "torch.float32",
+          "width": 56,
+          "autocast_enabled": false,
+          "grad_enabled": true
+        }
+      ]
+    },
+    {
+      "case": "disabled",
+      "native_tensor_identity_preserved": true
+    },
+    {
+      "case": "already_supported",
+      "native_tensor_identity_preserved": true
+    },
+    {
+      "case": "missing_api",
+      "native_tensor_identity_preserved": true
+    },
+    {
+      "case": "candidate_unsupported",
+      "native_tensor_identity_preserved": true
+    },
+    {
+      "case": "candidate_api_error",
+      "native_tensor_identity_preserved": true
+    },
+    {
+      "case": "no_enabled_backend",
+      "native_tensor_identity_preserved": true
+    }
+  ],
+  "cuda_initialized": false,
+  "status": "PASS"
+}

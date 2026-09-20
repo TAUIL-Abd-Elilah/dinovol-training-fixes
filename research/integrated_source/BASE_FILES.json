@@ -1,0 +1,378 @@
+{
+  "dinovol/.gitignore": {
+    "sha256": "d648287e0a43f22f2e767e686df83b65ae9c9bd13de817fbfe98568f41478323",
+    "bytes": 156
+  },
+  "dinovol/.python-version": {
+    "sha256": "ceba8fa5c10f40fbed8feb7eb5238b63dda568908acfd874ee413747b29936c8",
+    "bytes": 6
+  },
+  "dinovol/dinovol_2/__init__.py": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "dinovol/dinovol_2/augmentation/__init__.py": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "dinovol/dinovol_2/augmentation/dataloading/__init__.py": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "dinovol/dinovol_2/augmentation/helpers/__init__.py": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "dinovol/dinovol_2/augmentation/helpers/scalar_type.py": {
+    "sha256": "37c263f079ca03e40c246242aa866edf11c8ad1eba9a2031d8ab67f98621d5f4",
+    "bytes": 1461
+  },
+  "dinovol/dinovol_2/augmentation/pipelines/__init__.py": {
+    "sha256": "73c532cf96064cb7d6268f0ecf0bf2bd784c147e9848e5ab1682d7d03bc4a206",
+    "bytes": 137
+  },
+  "dinovol/dinovol_2/augmentation/pipelines/training_transforms.py": {
+    "sha256": "91707fa1f50b8d491c146522efe0ab38021776efb7203064bdeb92618acd9518",
+    "bytes": 19296
+  },
+  "dinovol/dinovol_2/augmentation/readme.md": {
+    "sha256": "484309cff5b1faeb96dd083cec6c11bc05ab8cf694f84c297b83b9cf7a29a009",
+    "bytes": 230
+  },
+  "dinovol/dinovol_2/augmentation/transforms/__init__.py": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "dinovol/dinovol_2/augmentation/transforms/base/__init__.py": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "dinovol/dinovol_2/augmentation/transforms/base/basic_transform.py": {
+    "sha256": "a80c54d985bdc7ca0cd3f5017f4bb5e6bbe740291345568a2cfbf884e56360be",
+    "bytes": 7372
+  },
+  "dinovol/dinovol_2/augmentation/transforms/intensity/__init__.py": {
+    "sha256": "4704cd577fcd229c56ee9be5e24329c87b070372db8ee2f37f0e157ffabbfb43",
+    "bytes": 980
+  },
+  "dinovol/dinovol_2/augmentation/transforms/intensity/brightness.py": {
+    "sha256": "a2d75c68a9244b4721bd4a6799f994c09c22b2485f3c270cc7ab2d29d9750264",
+    "bytes": 4726
+  },
+  "dinovol/dinovol_2/augmentation/transforms/intensity/contrast.py": {
+    "sha256": "c96b2652d95c5ee362d71638ae25454f8d49cc4a37fe80902a8bd39047f3fc71",
+    "bytes": 3102
+  },
+  "dinovol/dinovol_2/augmentation/transforms/intensity/gamma.py": {
+    "sha256": "9044bcac94ed0bec9cee9e51b97de5afa6593e7d3afd69e2f14e676263bab7b5",
+    "bytes": 3145
+  },
+  "dinovol/dinovol_2/augmentation/transforms/intensity/gaussian_noise.py": {
+    "sha256": "8e506d8ad5d31359edb7e35127336631b0536663f334443f14cbc547c901d000",
+    "bytes": 2540
+  },
+  "dinovol/dinovol_2/augmentation/transforms/intensity/illumination.py": {
+    "sha256": "b844c8e9d361fa83dbb650059b26b36a8a36cbd1410fd6fd7f71061919f44486",
+    "bytes": 5194
+  },
+  "dinovol/dinovol_2/augmentation/transforms/intensity/inversion.py": {
+    "sha256": "e7ea200c1863952b1450eba98bb79e39ebbd8804bb08bd7889056c211082c411",
+    "bytes": 2498
+  },
+  "dinovol/dinovol_2/augmentation/transforms/intensity/random_clip.py": {
+    "sha256": "7535f72b6ea21ffddb446191ca52274fa18c69273f848d581d27b9b5aa50fc91",
+    "bytes": 4028
+  },
+  "dinovol/dinovol_2/augmentation/transforms/local/__init__.py": {
+    "sha256": "b898289023884b8940d2a64ce4ff415314f2371d59fa4a6eb7619a45c6d653c4",
+    "bytes": 638
+  },
+  "dinovol/dinovol_2/augmentation/transforms/local/brightness_gradient.py": {
+    "sha256": "34cc6667a6e862aaa2ed76f4f2e8ef62829bc18eaa2228955ee9c35a0397cf74",
+    "bytes": 4724
+  },
+  "dinovol/dinovol_2/augmentation/transforms/local/local_contrast.py": {
+    "sha256": "fe42eb98e2aa3e4b8d22ee2f5ed5a301f07724975f75c51bc04d34b98407bf79",
+    "bytes": 3983
+  },
+  "dinovol/dinovol_2/augmentation/transforms/local/local_gamma.py": {
+    "sha256": "d9c679562377d856f7f31904a7674ea5a00d419c4b5c4fadaa0914967a3f0ca6",
+    "bytes": 4167
+  },
+  "dinovol/dinovol_2/augmentation/transforms/local/local_smoothing.py": {
+    "sha256": "6b14f9fb9ac9aa58ff0dd500e145095178c474812551e12be823423f232bfeed",
+    "bytes": 4232
+  },
+  "dinovol/dinovol_2/augmentation/transforms/local/local_transform.py": {
+    "sha256": "1d9d23bf50141106cf7c770d7430ed107e3ca518b74f937474fca8b02ad8ef53",
+    "bytes": 4454
+  },
+  "dinovol/dinovol_2/augmentation/transforms/nnunet/__init__.py": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "dinovol/dinovol_2/augmentation/transforms/nnunet/random_binary_operator.py": {
+    "sha256": "e5888da41da0c074765d1297841f9fffd7f7a8505e993f25e9a95254385c34ec",
+    "bytes": 8503
+  },
+  "dinovol/dinovol_2/augmentation/transforms/nnunet/seg_to_onehot.py": {
+    "sha256": "38631c843a813834ca1ce1b08e8a2037664f52bff5567c4f340c040af374ba7a",
+    "bytes": 1711
+  },
+  "dinovol/dinovol_2/augmentation/transforms/noise/__init__.py": {
+    "sha256": "974f1a527236b86c29996eaee7f13531f22e270919eaf310a26d7e2be364eee9",
+    "bytes": 606
+  },
+  "dinovol/dinovol_2/augmentation/transforms/noise/extranoisetransforms.py": {
+    "sha256": "60a74b24946f44c4dc456c6aaee896ae353fe8c57bf52733852f521d09645be6",
+    "bytes": 13550
+  },
+  "dinovol/dinovol_2/augmentation/transforms/noise/gaussian_blur.py": {
+    "sha256": "5b08329ef32750e3da0e610299192bb81d2be02810620e7c9bc816ca2a443e1a",
+    "bytes": 6892
+  },
+  "dinovol/dinovol_2/augmentation/transforms/noise/median_filter.py": {
+    "sha256": "2d2a6cbba212483d6c7e88880105176045862a3852a69fe07416bbd244fdc7d1",
+    "bytes": 2832
+  },
+  "dinovol/dinovol_2/augmentation/transforms/noise/sharpen.py": {
+    "sha256": "952492aa766f8e526de846327a1d23fee01bee156db64dcc6ef1f87b8635740c",
+    "bytes": 5322
+  },
+  "dinovol/dinovol_2/augmentation/transforms/spatial/__init__.py": {
+    "sha256": "05140ad6ca1aefbffc27e2577d7409edb0a4710d308188c0e747bccd6a2aacdf",
+    "bytes": 850
+  },
+  "dinovol/dinovol_2/augmentation/transforms/spatial/low_resolution.py": {
+    "sha256": "e963ef27ca3e06b9e8e6a22602e4569174956183da47cfd323526f4a67df9fc0",
+    "bytes": 3305
+  },
+  "dinovol/dinovol_2/augmentation/transforms/spatial/mirroring.py": {
+    "sha256": "d774a44f786407a62334f4f018cb36fc33f28af2d542b5ef768817421df48abb",
+    "bytes": 4856
+  },
+  "dinovol/dinovol_2/augmentation/transforms/spatial/rot90.py": {
+    "sha256": "30c0e4c3e60335f7e7b12e8a4a64cf72f4f4190af31a911d49b1f03794ddeb6c",
+    "bytes": 8033
+  },
+  "dinovol/dinovol_2/augmentation/transforms/spatial/sheet_compression.py": {
+    "sha256": "62199477209a416f909838e3561def00a62e78e3a3eeee0537c58c7b8e01bfdd",
+    "bytes": 9719
+  },
+  "dinovol/dinovol_2/augmentation/transforms/spatial/spatial.py": {
+    "sha256": "94a0d65d8026d1b3d07a63300673349da88c26bc29b8638f8d19718545781492",
+    "bytes": 31870
+  },
+  "dinovol/dinovol_2/augmentation/transforms/spatial/thick_slice.py": {
+    "sha256": "92e14edfa9e756295b734da1be62ff236410981b8dcdf3aaa620dfecdc25d459",
+    "bytes": 5685
+  },
+  "dinovol/dinovol_2/augmentation/transforms/spatial/transpose.py": {
+    "sha256": "cac072f5bf05f7bb287862a765a6ff33c43500a71fc0ce62b84dfa08437cdfa6",
+    "bytes": 6446
+  },
+  "dinovol/dinovol_2/augmentation/transforms/utils/__init__.py": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "dinovol/dinovol_2/augmentation/transforms/utils/compose.py": {
+    "sha256": "ce2f8e6e14e79af35f21c942e363bf3fdf5dccb49b18c958a620da0b72702f61",
+    "bytes": 943
+  },
+  "dinovol/dinovol_2/augmentation/transforms/utils/cropping.py": {
+    "sha256": "2ce22c23433cabd6905caddaeb7b7f9d44ecc753e915399e157d676de1a0dcab",
+    "bytes": 3626
+  },
+  "dinovol/dinovol_2/augmentation/transforms/utils/deep_supervision_downsampling.py": {
+    "sha256": "4ee28d389f6eea7511a38623d954ac1768ebb49e45f23852ebbec4d0bf6353d7",
+    "bytes": 1929
+  },
+  "dinovol/dinovol_2/augmentation/transforms/utils/morphological_closing.py": {
+    "sha256": "2261e2167b093a36023f233796469ead639e2a9e73986fbd3ad7a3be1f24eb17",
+    "bytes": 3154
+  },
+  "dinovol/dinovol_2/augmentation/transforms/utils/nnunet_masking.py": {
+    "sha256": "71d55a9d6b320795f7be7b353ee33f00a542c306bad67c92baea3ada8b408836",
+    "bytes": 1045
+  },
+  "dinovol/dinovol_2/augmentation/transforms/utils/oneoftransform.py": {
+    "sha256": "4d9ecee0fabe041edc5f687875b4c01d2c934c5a0ec93629e3d4bb4503f28039",
+    "bytes": 1188
+  },
+  "dinovol/dinovol_2/augmentation/transforms/utils/perf.py": {
+    "sha256": "201623e298b567ea5fdf301db652b76a062ef73f54674536a6d1904fbf5ae3ef",
+    "bytes": 1334
+  },
+  "dinovol/dinovol_2/augmentation/transforms/utils/pseudo2d.py": {
+    "sha256": "89ea28bfc235d2e73564ac5c5daa0e653b3cd6d6d284978d1e784c4c149dde58",
+    "bytes": 3536
+  },
+  "dinovol/dinovol_2/augmentation/transforms/utils/random.py": {
+    "sha256": "36698586cd056b90218d38bfbf9e8b0af6cf32369c0a9541caa77d774de2081e",
+    "bytes": 1401
+  },
+  "dinovol/dinovol_2/augmentation/transforms/utils/remove_label.py": {
+    "sha256": "7ccfb33282594b6dd530a72f242e94c972a97d580ae33b6c0dfe281efb6e48f7",
+    "bytes": 1310
+  },
+  "dinovol/dinovol_2/augmentation/transforms/utils/seg_to_regions.py": {
+    "sha256": "661dc9c29d2f48c28702f71f8a4e130452ac3b7de9dd2ff9e1478ac86e774179",
+    "bytes": 1573
+  },
+  "dinovol/dinovol_2/augmentation/transforms/utils/skeleton_transform.py": {
+    "sha256": "043ae7110364147228f07d220a23706f0419d2604e137f5652419894240a418c",
+    "bytes": 3313
+  },
+  "dinovol/dinovol_2/configs/finetune_ink_emb.json": {
+    "sha256": "4ec73cbb1b3880d81a54a56de513dc049682ad0174fad96e86d1a1a0bee42d63",
+    "bytes": 4054
+  },
+  "dinovol/dinovol_2/dataset/__init__.py": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "dinovol/dinovol_2/dataset/normalization.py": {
+    "sha256": "ec2f40cfbeb2cd1b88575bdae74f246f243eba9c72e4665d05e01918511f3e3c",
+    "bytes": 14007
+  },
+  "dinovol/dinovol_2/dataset/point_annotations.py": {
+    "sha256": "c29d352ae5871accaede4ca6e2bc67636a098f13e451c82bfd6ba4da5940ffaa",
+    "bytes": 4934
+  },
+  "dinovol/dinovol_2/dataset/ssl_zarr_dataset.py": {
+    "sha256": "ea03875bb619ac85f715f8310d30d9f05685613eefe37e9481faa9d58a37e397",
+    "bytes": 42832
+  },
+  "dinovol/dinovol_2/eval/__init__.py": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "dinovol/dinovol_2/eval/download_data.py": {
+    "sha256": "eeba1032b97a4a41502f35860162943b9bc5bdffd676fddf4adebdd0e53b85c9",
+    "bytes": 4002
+  },
+  "dinovol/dinovol_2/eval/napari_visualizer.py": {
+    "sha256": "5444b57021b01df1eb87502f1592ee75a99b35e4b67533df7411e802d5e5d3ad",
+    "bytes": 85753
+  },
+  "dinovol/dinovol_2/eval/task_eval.py": {
+    "sha256": "2a493b34f974737042f746df93c9750f85487107e9752a5b94ae0bc570ee99d8",
+    "bytes": 33854
+  },
+  "dinovol/dinovol_2/example_config.json": {
+    "sha256": "17e83a5b1e778eeb0a74764880360b5e77553b83a8ed4d3382c888dc470d52c8",
+    "bytes": 8461
+  },
+  "dinovol/dinovol_2/loss/__init__.py": {
+    "sha256": "6c87d4845a09785da3525b50270ffbc793cead9d1556fe29e7159ea8e14ec652",
+    "bytes": 318
+  },
+  "dinovol/dinovol_2/loss/dino_clstoken_loss.py": {
+    "sha256": "adff06dfba6d5829087b7582d37d8c857acc06ccf80a6e36dc6ad73270be7c22",
+    "bytes": 3851
+  },
+  "dinovol/dinovol_2/loss/gram_loss.py": {
+    "sha256": "6a601ade264f3a353aea58c8caedfadeb7314439a9ca6aa6b8ec5a0edc37b86c",
+    "bytes": 2910
+  },
+  "dinovol/dinovol_2/loss/ibot_patch_loss.py": {
+    "sha256": "7672220274312d6290cbd2524b3be2783c871f6fd7809b13a543b5fd17c5b0d7",
+    "bytes": 7633
+  },
+  "dinovol/dinovol_2/loss/koleo_loss.py": {
+    "sha256": "6529526486c6a74fbf9b38bcce53555d65cbfc54e9b96795d29e405df1844b65",
+    "bytes": 1684
+  },
+  "dinovol/dinovol_2/loss/point_loss.py": {
+    "sha256": "4a79f2b6162dbd346ee7179470bbc0a9fbb5eb45b0890c2001a3f42676bd0a27",
+    "bytes": 2780
+  },
+  "dinovol/dinovol_2/model/__init__.py": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "dinovol/dinovol_2/model/dinov2_eva.py": {
+    "sha256": "f17ef11ae27dbd97150afd900e5d98f45df34dde9c5ecefe196cbd481487cdb9",
+    "bytes": 40130
+  },
+  "dinovol/dinovol_2/model/model.py": {
+    "sha256": "d94936e6c97c9f6751b35b6fb48c8d0e8b13c42b1fe3b3bb30050c1d44f8bd3e",
+    "bytes": 28687
+  },
+  "dinovol/dinovol_2/model/patch_encode_decode.py": {
+    "sha256": "1fb5bbcc9402bbd21a332898b7f101c6cf864ba323d290144d265d351fc9c1af",
+    "bytes": 38794
+  },
+  "dinovol/dinovol_2/model/rope.py": {
+    "sha256": "1452de79dc1bc6fc97c52cd6a7bb4f0b8a7ad186ecf35b5a960d22f0f581a41b",
+    "bytes": 13452
+  },
+  "dinovol/dinovol_2/ops/__init__.py": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "dinovol/dinovol_2/ops/collate.py": {
+    "sha256": "1f01abfd1a944fa91524599ecb74c3c4a22a0a9c4981d0b77058b6c7e067e388",
+    "bytes": 6747
+  },
+  "dinovol/dinovol_2/ops/distributed_utils.py": {
+    "sha256": "2a3e1a0bf0204fa003406a9eedb92605aa58658996b79406d46ea929ecd5bdf8",
+    "bytes": 1092
+  },
+  "dinovol/dinovol_2/ops/masking.py": {
+    "sha256": "7c5796db7ad46cb8b591058e132b1c77c4591984dc1b89b5683fdad5b6d4a6fc",
+    "bytes": 4606
+  },
+  "dinovol/dinovol_2/ops/point_embeddings.py": {
+    "sha256": "ca46ef79987a89b6332d2f7e5f513cda6af5df5ded8289745de0d0b64f1c50e8",
+    "bytes": 5611
+  },
+  "dinovol/dinovol_2/ops/weighted_loader.py": {
+    "sha256": "8a47b7a72bc2114f4917d3b255241762184564a51550e86480df255905bcdbbf",
+    "bytes": 3230
+  },
+  "dinovol/dinovol_2/pretrain.py": {
+    "sha256": "e48b4dc5fe5deaf61c1af48630a26a63595b3ddb2e3b15ad7a5f01dfbc7e44f6",
+    "bytes": 98783
+  },
+  "dinovol/dinovol_2/verify.py": {
+    "sha256": "14904d3dde706aeac3fd0c8f2b4f5873fad175c8370ddd1fd0d6f8b885a22ac4",
+    "bytes": 2448
+  },
+  "dinovol/LICENSE": {
+    "sha256": "13a6ff641e223e1136685fc3ead04edff2404d4271570f18d3127b45f71e537d",
+    "bytes": 1096
+  },
+  "dinovol/LICENSES/Apache-2.0.txt": {
+    "sha256": "4b63d54afaae8f96b7b3baeb94d902bb50e4f17e3d0fc6cb450bef56cb769616",
+    "bytes": 11562
+  },
+  "dinovol/LICENSES/DINOv3-LICENSE.md": {
+    "sha256": "70caeefb829f11a21cd8fe524e8c3e9efeaeb8ec6e9326810878b9104f4255fc",
+    "bytes": 7569
+  },
+  "dinovol/pyproject.toml": {
+    "sha256": "660b947edd7200b0fb3a0245171f033b73d6b60cceeefe99a4de0d445512eae2",
+    "bytes": 734
+  },
+  "dinovol/README.md": {
+    "sha256": "e0f5a5bf28ea0a8294d32d1be6a85aba50ba48a5621585c7ffd7c1263e6015b1",
+    "bytes": 8242
+  },
+  "dinovol/tests/test_point_supervision.py": {
+    "sha256": "1b63e6964039055ab3b4298e17cfaa76e747dbbfd3415dacf54361818cce7412",
+    "bytes": 18006
+  },
+  "dinovol/tests/test_pretrain_smoke.py": {
+    "sha256": "32cf3d5c34ec02d101dd21798be2b6e5e3b38fb5106825a88fb68e30c9d320f4",
+    "bytes": 11641
+  },
+  "dinovol/THIRD_PARTY_NOTICES.md": {
+    "sha256": "42f278206983eb96d7a473639481d944524ed9da46662239a511b5cbc1b9a29d",
+    "bytes": 2371
+  },
+  "dinovol/uv.lock": {
+    "sha256": "ccd26b264ea2152c053aae5b040186d928648046d5c039db593857dc4971f33e",
+    "bytes": 472689
+  }
+}
