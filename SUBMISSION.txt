@@ -14,7 +14,7 @@ I used real PHerc0139 CT from the public 9.362-micrometre scan and the official 
 
 While preparing pretrained Dinovol training on scroll CT, I encountered two independent failures. The trainer discarded requested pretrained weights and head settings, silently replacing an intended warm start with random initialization. Enabling activation checkpointing also failed because PyTorch rejected the model's existing RoPE arguments. Two small patches restore these intended behaviors.
 
-I also developed an experimental, default-off training option that computes padded attention internally in FP32 while retaining FP16 model inputs and outputs. The integrated source completed a training workload that exhausted memory with native attention on the same GPU. This enables further scroll-representation experiments on existing hardware; it does not yet demonstrate improved ink accuracy or new readable text.
+I also developed an experimental, default-off training option that computes padded attention internally in FP32 and casts its result back to FP16. The integrated source completed a training workload that exhausted memory with native attention on the same GPU. This enables further scroll-representation experiments on existing hardware; it does not yet demonstrate improved ink accuracy or new readable text.
 
 (3) What does this enable that was not possible before?
 
