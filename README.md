@@ -68,7 +68,7 @@ The warm-start fix concerns authored model initialization options; the separate 
 
 ## Experimental default-off training attention
 
-The current training candidate pads the 54-wide attention heads to 56 and computes attention internally in FP32, retaining the original attention scale, native autograd, and FP16 model inputs/outputs. It remains an explicit, default-off experiment. The [source integration patch](research/training/integration/dinovol_training_head_padding.patch) routes `model.pad_sdpa_heads` through the actual model factory and Eva attention call; unsupported inputs follow the native path. The two bug fixes work independently of this option.
+The current training candidate pads the 54-wide attention heads to 56 and computes attention internally in FP32, retaining the original attention scale and native autograd, then casting the attention result back to FP16. It remains an explicit, default-off experiment. The [source integration patch](research/training/integration/dinovol_training_head_padding.patch) routes `model.pad_sdpa_heads` through the actual model factory and Eva attention call; unsupported inputs follow the native path. The two bug fixes work independently of this option.
 
 ### Actual integrated source at 128³
 
